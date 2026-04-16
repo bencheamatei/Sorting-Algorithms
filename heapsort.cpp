@@ -62,8 +62,3 @@ int main() {
     
     return 0;
 }
-
-/*
-Heap sort - O(nlogn)
-
-*/
