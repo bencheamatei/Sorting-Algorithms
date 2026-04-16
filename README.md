@@ -2,12 +2,26 @@
 
 ## Algorithms 
 
-- Heapsort [] src, [] tested
-- Quicksort [] src, [] tested
-- Mergesort [] src, [] tested
-- Introsort [] src, [] tested
-- Patience Sorting [] src, [] tested
-- Radix Sort [] src, [] tested
-- Bubble Sort [] src, [] tested
-- Insertion Sort [] src, [] tested
-- Gnome Sort [] src, [] tested
+### TODO - sources
+
+- [ ] HeapSort
+- [ ] Quicksort
+- [ ] Mergesort
+- [ ] Introsort
+- [ ] Patience Sorting
+- [ ] Radix Sort
+- [ ] Bubble Sort
+- [ ] Insertion Sort
+- [ ] Gnome Sort
+
+### TODO - testing
+
+- [ ] HeapSort
+- [ ] Quicksort
+- [ ] Mergesort
+- [ ] Introsort
+- [ ] Patience Sorting
+- [ ] Radix Sort
+- [ ] Bubble Sort
+- [ ] Insertion Sort
+- [ ] Gnome Sort
