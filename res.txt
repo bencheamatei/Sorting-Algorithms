@@ -1,55 +1,60 @@
 On big-test-0: 
-  heapsort - 5.634 s
-  heapsort-matei - 5.318 s
-  intro_sort - 3.941 s
-  merge_sort - 3.885 s
-  patience_sort - 7.156 s
-  quick_sort - 3.014 s
-  quicksort-matei - 4.099 s
-  radix-sort-matei - 1.987 s
-  radix_sort - 2.097 s
+  heapsort - 7.760 s
+  heapsort-matei - 5.288 s
+  intro-sort-matei - 5.202 s
+  intro_sort - 2.951 s
+  merge_sort - 3.777 s
+  patience_sort - 6.948 s
+  quick_sort - 3.356 s
+  quicksort-matei - 4.123 s
+  radix-sort-matei - 2.021 s
+  radix_sort - 2.233 s
 -----------------------------
 On big-test-1: 
-  heapsort - 5.516 s
-  heapsort-matei - 6.353 s
-  intro_sort - 2.964 s
-  merge_sort - 3.760 s
-  patience_sort - 7.002 s
-  quick_sort - 3.034 s
-  quicksort-matei - 4.058 s
-  radix-sort-matei - 1.978 s
-  radix_sort - 2.101 s
+  heapsort - 7.554 s
+  heapsort-matei - 5.571 s
+  intro-sort-matei - 4.113 s
+  intro_sort - 2.862 s
+  merge_sort - 3.583 s
+  patience_sort - 7.140 s
+  quick_sort - 3.065 s
+  quicksort-matei - 5.218 s
+  radix-sort-matei - 1.997 s
+  radix_sort - 2.196 s
 -----------------------------
 On big-test-2: 
-  heapsort - 6.630 s
-  heapsort-matei - 5.372 s
-  intro_sort - 2.875 s
-  merge_sort - 3.637 s
-  patience_sort - 7.305 s
-  quick_sort - 3.052 s
-  quicksort-matei - 4.078 s
-  radix-sort-matei - 1.997 s
-  radix_sort - 2.199 s
+  heapsort - 6.104 s
+  heapsort-matei - 5.284 s
+  intro-sort-matei - 4.123 s
+  intro_sort - 2.938 s
+  merge_sort - 3.980 s
+  patience_sort - 8.544 s
+  quick_sort - 3.167 s
+  quicksort-matei - 4.152 s
+  radix-sort-matei - 1.917 s
+  radix_sort - 2.112 s
 -----------------------------
 On big-test-3: 
-  heapsort - 6.645 s
-  heapsort-matei - 5.744 s
-  intro_sort - 3.003 s
-  merge_sort - 3.929 s
-  patience_sort - 7.274 s
-  quick_sort - 3.179 s
-  quicksort-matei - 5.256 s
-  radix-sort-matei - 2.029 s
-  radix_sort - 2.205 s
+  heapsort - 6.269 s
+  heapsort-matei - 5.308 s
+  intro-sort-matei - 4.059 s
+  intro_sort - 2.865 s
+  merge_sort - 4.629 s
+  patience_sort - 7.833 s
+  quick_sort - 3.468 s
+  quicksort-matei - 4.054 s
+  radix-sort-matei - 2.018 s
+  radix_sort - 2.105 s
 -----------------------------
 On big-test-4: 
-  heapsort - 5.443 s
-  heapsort-matei - 5.204 s
-  intro_sort - 2.885 s
-  merge_sort - 3.843 s
-  patience_sort - 7.315 s
-  quick_sort - 4.190 s
-  quicksort-matei - 4.242 s
-  radix-sort-matei - 2.052 s
-  radix_sort - 2.080 s
+  heapsort - 6.458 s
+  heapsort-matei - 6.416 s
+  intro-sort-matei - 4.404 s
+  intro_sort - 3.222 s
+  merge_sort - 4.206 s
+  patience_sort - 8.260 s
+  quick_sort - 3.150 s
+  quicksort-matei - 4.284 s
+  radix-sort-matei - 2.076 s
+  radix_sort - 3.440 s
 -----------------------------
