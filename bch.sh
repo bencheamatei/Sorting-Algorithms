@@ -19,7 +19,7 @@ for test_file in "$tests"/*.in; do
     
     test_name=$(basename "$test_file" .in)
     
-    echo "On $test_name: " 
+    echo "On $test_name: "
     
     for bin_file in "$bins"/*; do 
         sort_name=$(basename "$bin_file")
@@ -27,6 +27,6 @@ for test_file in "$tests"/*.in; do
         echo "  $sort_name - $timp s"
     done 
     echo "-----------------------------"
-done
+done > res.txt
 
 rm -rf "$bins"
