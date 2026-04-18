@@ -1,0 +1,54 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cassert>
+
+void quicksort(std::vector<int> &a, int st,int dr) {
+    if(st>=dr)
+        return ;
+
+    int pivot_idx=st+rand()%(dr-st+1);
+    int low=st;
+    int gre=dr;
+    int i=st+1;
+    std::swap(a[pivot_idx],a[st]);
+    int pivot=a[st];
+
+    while(i<=gre) {
+        if(a[i]<pivot) {
+            std::swap(a[low],a[i]);
+            low++;
+            i++;
+        }
+        else if(a[i]>pivot) {
+            std::swap(a[gre],a[i]);
+            gre--;
+        }   
+        else {
+            i++;
+        }
+    }
+
+    quicksort(a,st,low-1);
+    quicksort(a,gre+1,dr);
+}
+
+void custom_sort(std::vector<int> &a) {
+    quicksort(a,0,(int)a.size()-1);
+}
+
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
+    int n;
+    std::cin >> n;
+    std::vector<int> a(n);
+    for (int& x : a) {
+        std::cin >> x;
+    }
+
+    custom_sort(a);
+    assert(std::ranges::is_sorted(a));
+    return 0;
+}

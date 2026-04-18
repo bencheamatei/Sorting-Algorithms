@@ -14,9 +14,6 @@ def gen_test(n,file):
 def main():
     big_n=10000000
     small_n=20000
-    for i in range(20):
+    for i in range(5):
         gen_test(big_n,"./teste/big-test-"+str(i))
-    for i in range(10):
-        gen_test(small_n,"./teste/small-test-"+str(i))
-
 main()
