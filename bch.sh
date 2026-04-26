@@ -1,7 +1,7 @@
 #!/bin/bash
 
-algs="all"
-tests="teste"
+algs="$1"
+tests="$2"
 bins="bin"
 
 mkdir -p "$bins"

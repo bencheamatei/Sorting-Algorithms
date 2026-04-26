@@ -1,60 +1,80 @@
 On big-test-0: 
-  heapsort - 7.760 s
-  heapsort-matei - 5.288 s
-  intro-sort-matei - 5.202 s
-  intro_sort - 2.951 s
-  merge_sort - 3.777 s
-  patience_sort - 6.948 s
-  quick_sort - 3.356 s
-  quicksort-matei - 4.123 s
-  radix-sort-matei - 2.021 s
-  radix_sort - 2.233 s
+  heapsort - 6.608 s
+  heapsort-matei - 6.224 s
 -----------------------------
 On big-test-1: 
-  heapsort - 7.554 s
-  heapsort-matei - 5.571 s
-  intro-sort-matei - 4.113 s
-  intro_sort - 2.862 s
-  merge_sort - 3.583 s
-  patience_sort - 7.140 s
-  quick_sort - 3.065 s
-  quicksort-matei - 5.218 s
-  radix-sort-matei - 1.997 s
-  radix_sort - 2.196 s
+  heapsort - 8.844 s
+  heapsort-matei - 6.688 s
+-----------------------------
+On big-test-10: 
+  heapsort - 7.124 s
+  heapsort-matei - 6.441 s
+-----------------------------
+On big-test-11: 
+  heapsort - 7.936 s
+  heapsort-matei - 8.053 s
+-----------------------------
+On big-test-12: 
+  heapsort - 7.465 s
+  heapsort-matei - 6.451 s
+-----------------------------
+On big-test-13: 
+  heapsort - 8.128 s
+  heapsort-matei - 6.485 s
+-----------------------------
+On big-test-14: 
+  heapsort - 8.036 s
+  heapsort-matei - 6.831 s
+-----------------------------
+On big-test-15: 
+  heapsort - 3.778 s
+  heapsort-matei - 2.634 s
+-----------------------------
+On big-test-16: 
+  heapsort - 2.681 s
+  heapsort-matei - 2.184 s
+-----------------------------
+On big-test-17: 
+  heapsort - 3.368 s
+  heapsort-matei - 2.566 s
+-----------------------------
+On big-test-18: 
+  heapsort - 3.588 s
+  heapsort-matei - 3.784 s
+-----------------------------
+On big-test-19: 
+  heapsort - 3.659 s
+  heapsort-matei - 2.374 s
 -----------------------------
 On big-test-2: 
-  heapsort - 6.104 s
-  heapsort-matei - 5.284 s
-  intro-sort-matei - 4.123 s
-  intro_sort - 2.938 s
-  merge_sort - 3.980 s
-  patience_sort - 8.544 s
-  quick_sort - 3.167 s
-  quicksort-matei - 4.152 s
-  radix-sort-matei - 1.917 s
-  radix_sort - 2.112 s
+  heapsort - 7.481 s
+  heapsort-matei - 7.368 s
 -----------------------------
 On big-test-3: 
-  heapsort - 6.269 s
-  heapsort-matei - 5.308 s
-  intro-sort-matei - 4.059 s
-  intro_sort - 2.865 s
-  merge_sort - 4.629 s
-  patience_sort - 7.833 s
-  quick_sort - 3.468 s
-  quicksort-matei - 4.054 s
-  radix-sort-matei - 2.018 s
-  radix_sort - 2.105 s
+  heapsort - 8.919 s
+  heapsort-matei - 8.215 s
 -----------------------------
 On big-test-4: 
-  heapsort - 6.458 s
-  heapsort-matei - 6.416 s
-  intro-sort-matei - 4.404 s
-  intro_sort - 3.222 s
-  merge_sort - 4.206 s
-  patience_sort - 8.260 s
-  quick_sort - 3.150 s
-  quicksort-matei - 4.284 s
-  radix-sort-matei - 2.076 s
-  radix_sort - 3.440 s
+  heapsort - 9.360 s
+  heapsort-matei - 7.122 s
+-----------------------------
+On big-test-5: 
+  heapsort - 8.300 s
+  heapsort-matei - 6.596 s
+-----------------------------
+On big-test-6: 
+  heapsort - 8.008 s
+  heapsort-matei - 7.539 s
+-----------------------------
+On big-test-7: 
+  heapsort - 9.445 s
+  heapsort-matei - 6.547 s
+-----------------------------
+On big-test-8: 
+  heapsort - 7.721 s
+  heapsort-matei - 7.063 s
+-----------------------------
+On big-test-9: 
+  heapsort - 7.238 s
+  heapsort-matei - 6.163 s
 -----------------------------

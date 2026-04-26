@@ -3,11 +3,22 @@
 #include <vector>
 #include <cassert>
 
-void quicksort(std::vector<int> &a, int st,int dr) {
+int mediana(std::vector<int> &a,int st,int dr) {
+    int mij=(st+dr)>>1;
+    if(a[st]>a[dr])
+        std::swap(a[st],a[dr]);
+    if(a[st]<=a[mij] && a[mij]<=a[dr])
+        return mij;
+    if(a[mij]<=a[st])
+        return st;
+    return dr;
+}
+
+void quick_sort(std::vector<int> &a,int st,int dr) {
     if(st>=dr)
         return ;
 
-    int pivot_idx=st+rand()%(dr-st+1);
+    int pivot_idx=mediana(a,st,dr);
     int low=st;
     int gre=dr;
     int i=st+1;
@@ -29,12 +40,12 @@ void quicksort(std::vector<int> &a, int st,int dr) {
         }
     }
 
-    quicksort(a,st,low-1);
-    quicksort(a,gre+1,dr);
+    quick_sort(a,st,low-1);
+    quick_sort(a,gre+1,dr);
 }
 
 void custom_sort(std::vector<int> &a) {
-    quicksort(a,0,(int)a.size()-1);
+    quick_sort(a,0,(int)a.size()-1);
 }
 
 int main() {

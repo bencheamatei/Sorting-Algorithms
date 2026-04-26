@@ -7,9 +7,9 @@ void custom_sort(std::vector<int> &a) {
     bool sortat=0;
     int n=(int)a.size();
 
-    while(!sortat) {
+   for(int it=0; !sortat && it<n; ++it) {
         sortat=1;
-        for(int i=0; i<n-1; i++) {
+        for(int i=n-2; i>=it; --i) {
             if(a[i]>a[i+1]) {
                 sortat=0;
                 std::swap(a[i],a[i+1]);

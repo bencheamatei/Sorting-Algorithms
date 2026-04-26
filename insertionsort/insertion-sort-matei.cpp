@@ -16,7 +16,7 @@ void custom_sort(std::vector<int> &a) {
         }
 
         a[j]=x; 
-        i++;
+        ++i;
     }
 }   
 

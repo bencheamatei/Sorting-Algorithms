@@ -3,6 +3,17 @@
 #include <vector>
 #include <cassert>
 
+int mediana(std::vector<int> &a,int st,int dr) {
+    int mij=(st+dr)>>1;
+    if(a[st]>a[dr])
+        std::swap(a[st],a[dr]);
+    if(a[st]<=a[mij] && a[mij]<=a[dr])
+        return mij;
+    if(a[mij]<=a[st])
+        return st;
+    return dr;
+}
+
 void insertion_sort(std::vector<int> &a, int left,int right) {
     int i=left+1;
     while(i<=right) {
@@ -13,7 +24,7 @@ void insertion_sort(std::vector<int> &a, int left,int right) {
             j--;
         }
         a[j]=x; 
-        i++;
+        ++i;
     }
 }   
 
@@ -55,7 +66,7 @@ void intro_sort(std::vector<int> &a, int st,int dr, int depth) {
         heap_sort(a,st,dr);
     }
     else {
-        int pivot_idx=st+rand()%(dr-st+1);
+        int pivot_idx=mediana(a,st,dr);
         int low=st;
         int gre=dr;
         int i=st+1;
