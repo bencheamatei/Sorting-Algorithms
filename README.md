@@ -16,12 +16,12 @@
 
 ### TODO - testing
 
-- [ ] HeapSort
+- [x] HeapSort - varianta lui matei
 - [ ] Quicksort
 - [ ] Mergesort
 - [ ] Introsort
 - [ ] Patience Sorting
-- [ ] Radix Sort
-- [ ] Bubble Sort
-- [ ] Insertion Sort
-- [ ] Gnome Sort
+- [x] Radix Sort - varianta lui matei 
+- [x] Bubble Sort - varianta lui matei
+- [x] Insertion Sort - varianta lui matei
+- [x] Gnome Sort - varianta lui matei
