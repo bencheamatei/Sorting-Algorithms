@@ -4,7 +4,7 @@
 #include <cassert>
 
 void custom_sort(std::vector<int> &a) {
-    int n=(int)a.size();
+    int n=a.size();
     int pos=1;
     while(pos<n) {
         if(pos==0 || a[pos]>=a[pos-1]) {

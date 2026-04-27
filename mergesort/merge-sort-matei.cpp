@@ -1,0 +1,60 @@
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <cassert>
+
+std::vector<int> tmp;
+
+void merge_sort(std::vector<int> &a,int st,int dr) {
+    if(st>=dr) 
+        return ;
+
+    int mij=(st+dr)>>1;
+    merge_sort(a,st,mij);
+    merge_sort(a,mij+1,dr);
+
+    int i=st;
+    int j=mij+1;
+    int u=0;
+    while(i<=mij && j<=dr) {
+        if(a[i]<a[j]) {
+            tmp[u++]=a[i++];
+        }
+        else {
+            tmp[u++]=a[j++];
+        }
+    }
+
+    while(i<=mij) {
+        tmp[u++]=a[i++];
+    }
+
+    while(j<=dr) {
+        tmp[u++]=a[j++];
+    }
+
+    for(int k=st; k<=dr; k++) {
+        a[k]=tmp[k-st];
+    }
+}
+
+void custom_sort(std::vector<int> &a) {
+    tmp.resize((int)a.size());
+    merge_sort(a,0,(int)a.size()-1);
+}
+
+int main() {
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
+    int n;
+    std::cin >> n;
+    std::vector<int> a(n);
+    for (int& x : a) {
+        std::cin >> x;
+    }
+
+    custom_sort(a);
+    assert(std::ranges::is_sorted(a));
+    return 0;
+}
