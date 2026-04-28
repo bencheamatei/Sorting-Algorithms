@@ -1,80 +1,51 @@
-On big-test-0: 
-  patience-sort-matei - 9.614 s
-  patience_sort - 7.638 s
+On test-0: 
+  best-of-3 - 6.149 s
+  ninther - 4.692 s
+  random - 5.092 s
+  random-best-of-3 - 4.668 s
+  stl - 4.531 s
 -----------------------------
-On big-test-1: 
-  patience-sort-matei - 7.374 s
-  patience_sort - 7.302 s
+On test-1: 
+  best-of-3 - 2.404 s
+  ninther - 2.306 s
+  random - 2.306 s
+  random-best-of-3 - 2.411 s
+  stl - 4.745 s
 -----------------------------
-On big-test-10: 
-  patience-sort-matei - 7.601 s
-  patience_sort - 9.347 s
+On test-2: 
+  best-of-3 - 19.978 s
+  ninther - 3.623 s
+  random - 4.246 s
+  random-best-of-3 - 4.497 s
+  stl - 3.942 s
 -----------------------------
-On big-test-11: 
-  patience-sort-matei - 7.567 s
-  patience_sort - 7.776 s
+On test-3: 
+  best-of-3 - 61.694 s
+  ninther - 3.601 s
+  random - 4.055 s
+  random-best-of-3 - 4.224 s
+  stl - 3.849 s
 -----------------------------
-On big-test-12: 
-  patience-sort-matei - 7.731 s
-  patience_sort - 9.444 s
+On test-4: 
+  best-of-3 - 5.005 s
+  ninther - 4.773 s
+  random - 5.330 s
+  random-best-of-3 - 5.163 s
+  stl - 4.529 s
 -----------------------------
-On big-test-13: 
-  patience-sort-matei - 7.338 s
-  patience_sort - 7.273 s
+On test-5: 
+  best-of-3 - 3.932 s
+  ninther - 4.679 s
+  random - 4.313 s
+  random-best-of-3 - 3.901 s
+  stl - 3.962 s
 -----------------------------
-On big-test-14: 
-  patience-sort-matei - 7.590 s
-  patience_sort - 9.304 s
+
+=== FINAL BENCHMARK RESULTS ===
+  random-best-of-3 average time: 4.1440 s
+  best-of-3 average time: 16.5270 s
+  stl average time: 4.2597 s
+  random average time: 4.2237 s
+  ninther average time: 3.9457 s
 -----------------------------
-On big-test-15: 
-  patience-sort-matei - 3.170 s
-  patience_sort - 2.842 s
------------------------------
-On big-test-16: 
-  patience-sort-matei - 2.619 s
-  patience_sort - 2.348 s
------------------------------
-On big-test-17: 
-  patience-sort-matei - 2.792 s
-  patience_sort - 2.599 s
------------------------------
-On big-test-18: 
-  patience-sort-matei - 2.883 s
-  patience_sort - 2.540 s
------------------------------
-On big-test-19: 
-  patience-sort-matei - 2.705 s
-  patience_sort - 2.614 s
------------------------------
-On big-test-2: 
-  patience-sort-matei - 9.267 s
-  patience_sort - 7.351 s
------------------------------
-On big-test-3: 
-  patience-sort-matei - 7.419 s
-  patience_sort - 7.653 s
------------------------------
-On big-test-4: 
-  patience-sort-matei - 9.844 s
-  patience_sort - 8.558 s
------------------------------
-On big-test-5: 
-  patience-sort-matei - 9.047 s
-  patience_sort - 7.495 s
------------------------------
-On big-test-6: 
-  patience-sort-matei - 10.589 s
-  patience_sort - 7.592 s
------------------------------
-On big-test-7: 
-  patience-sort-matei - 8.311 s
-  patience_sort - 7.450 s
------------------------------
-On big-test-8: 
-  patience-sort-matei - 9.986 s
-  patience_sort - 7.446 s
------------------------------
-On big-test-9: 
-  patience-sort-matei - 8.607 s
-  patience_sort - 7.627 s
------------------------------
+🏆 WINNER: ninther (3.9457 s on average)

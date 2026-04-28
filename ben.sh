@@ -33,7 +33,6 @@ for test_file in "$tests"/*.in; do
     echo "-----------------------------" >> res.txt
 done 
 
-# 3. Calculate averages and find the winner using awk
 echo "" >> res.txt
 echo "=== FINAL BENCHMARK RESULTS ===" >> res.txt
 
@@ -58,9 +57,8 @@ END {
     }
     
     print "-----------------------------"
-    printf "🏆 WINNER: %s (%.4f s on average)\n", best_alg, best_time
+    printf "best: %s (%.4f s on average)\n", best_alg, best_time
 }' "$tmp_results" >> res.txt
 
-# 4. Clean up and print results to terminal
 rm -rf "$bins" "$tmp_results"
 cat res.txt
