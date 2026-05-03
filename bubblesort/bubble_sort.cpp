@@ -7,14 +7,17 @@
 #include <queue>
 using namespace std;
 
-void bubble_sort(vector<int>& a)
+void custom_sort(vector<int>& a)
 {
+    int* v=a.data();
     int n = a.size();
     for (int i = 0; i < n - 1; ++i) {
         bool swapped = false;
         for (int j = 0; j < n - 1 - i; ++j) {
-            if (a[j] > a[j + 1]) {
-                swap(a[j], a[j + 1]);
+            if (v[j] > v[j + 1]) {
+                int tmp=v[j+1];
+                v[j+1]=v[j];
+                v[j]=tmp;
                 swapped = true;
             }
         }
@@ -22,20 +25,19 @@ void bubble_sort(vector<int>& a)
     }
 }
 
+
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
     int n;
-    cin>>n;
-    vector<int> a(n);
+    std::cin >> n;
+    std::vector<int> a(n);
     for (int& x : a) {
-        cin >> x;
+        std::cin >> x;
     }
-    
-    bubble_sort(a);
-    
-    assert(is_sorted(a.begin(), a.end()));    
-    
+
+    custom_sort(a);
+    assert(std::ranges::is_sorted(a));
     return 0;
 }

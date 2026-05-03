@@ -4,14 +4,19 @@
 #include <cassert>
 
 void custom_sort(std::vector<int> &a) {
-    int n=a.size();
+    int n=(int)a.size();
     int pos=1;
+    int nxt=2;
+    int* v=a.data();
     while(pos<n) {
-        if(pos==0 || a[pos]>=a[pos-1]) {
-            pos++;
+        if(pos==0 || v[pos]>=v[pos-1]) {
+            pos=nxt;
+            nxt++;
         }
         else {
-            std::swap(a[pos],a[pos-1]);
+            int tmp=v[pos];
+            v[pos]=v[pos-1];
+            v[pos-1]=tmp;
             pos--;
         } 
     }

@@ -6,13 +6,17 @@
 void custom_sort(std::vector<int> &a) {
     bool sortat=0;
     int n=(int)a.size();
+    int* v=a.data();
 
-   for(int it=0; !sortat && it<n; ++it) {
-        sortat=1;
+    for(int it=0; !sortat && it<n; ++it) {
+        sortat=true;
         for(int i=n-2; i>=it; --i) {
-            if(a[i]>a[i+1]) {
+            if(v[i]>v[i+1]) {
                 sortat=0;
-                std::swap(a[i],a[i+1]);
+                // std::swap(a[i],a[i+1]);
+                int tmp=v[i];
+                v[i]=v[i+1];
+                v[i+1]=tmp;
             }
         }
     }

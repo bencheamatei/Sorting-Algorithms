@@ -13,7 +13,7 @@ int get_nr(int st, int dr)
 
 void quicksort(std::vector<int>& a, int st, int dr) {
     while(st<dr) {
-        int pivot_idx=get_nr(st,dr);
+        int pivot_idx=st+rand()%(dr-st+1);
         int low=st;
         int gre=dr;
         int i=st+1;
@@ -47,8 +47,8 @@ void quicksort(std::vector<int>& a, int st, int dr) {
 }
 
 void custom_sort(std::vector<int> &a) {
-    std::random_device rd;
-    gen.seed(rd());
+    // std::random_device rd;
+    // gen.seed(rd());
     quicksort(a,0,(int)a.size()-1);
 }
 

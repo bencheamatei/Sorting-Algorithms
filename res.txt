@@ -1,51 +1,78 @@
 On test-0: 
-  best-of-3 - 6.149 s
-  ninther - 4.692 s
-  random - 5.092 s
-  random-best-of-3 - 4.668 s
-  stl - 4.531 s
+  insertion-sort-matei - 0.099 s
+  insertion_sort - 0.478 s
 -----------------------------
 On test-1: 
-  best-of-3 - 2.404 s
-  ninther - 2.306 s
-  random - 2.306 s
-  random-best-of-3 - 2.411 s
-  stl - 4.745 s
+  insertion-sort-matei - 0.010 s
+  insertion_sort - 0.010 s
+-----------------------------
+On test-10: 
+  insertion-sort-matei - 0.182 s
+  insertion_sort - 0.828 s
+-----------------------------
+On test-11: 
+  insertion-sort-matei - 0.018 s
+  insertion_sort - 0.043 s
+-----------------------------
+On test-12: 
+  insertion-sort-matei - 0.098 s
+  insertion_sort - 0.457 s
+-----------------------------
+On test-13: 
+  insertion-sort-matei - 0.010 s
+  insertion_sort - 0.016 s
+-----------------------------
+On test-14: 
+  insertion-sort-matei - 0.177 s
+  insertion_sort - 0.887 s
+-----------------------------
+On test-15: 
+  insertion-sort-matei - 0.022 s
+  insertion_sort - 0.042 s
+-----------------------------
+On test-16: 
+  insertion-sort-matei - 0.095 s
+  insertion_sort - 0.439 s
+-----------------------------
+On test-17: 
+  insertion-sort-matei - 0.010 s
+  insertion_sort - 0.019 s
 -----------------------------
 On test-2: 
-  best-of-3 - 19.978 s
-  ninther - 3.623 s
-  random - 4.246 s
-  random-best-of-3 - 4.497 s
-  stl - 3.942 s
+  insertion-sort-matei - 0.180 s
+  insertion_sort - 0.887 s
 -----------------------------
 On test-3: 
-  best-of-3 - 61.694 s
-  ninther - 3.601 s
-  random - 4.055 s
-  random-best-of-3 - 4.224 s
-  stl - 3.849 s
+  insertion-sort-matei - 0.021 s
+  insertion_sort - 0.047 s
 -----------------------------
 On test-4: 
-  best-of-3 - 5.005 s
-  ninther - 4.773 s
-  random - 5.330 s
-  random-best-of-3 - 5.163 s
-  stl - 4.529 s
+  insertion-sort-matei - 0.096 s
+  insertion_sort - 0.472 s
 -----------------------------
 On test-5: 
-  best-of-3 - 3.932 s
-  ninther - 4.679 s
-  random - 4.313 s
-  random-best-of-3 - 3.901 s
-  stl - 3.962 s
+  insertion-sort-matei - 0.014 s
+  insertion_sort - 0.011 s
+-----------------------------
+On test-6: 
+  insertion-sort-matei - 0.182 s
+  insertion_sort - 0.829 s
+-----------------------------
+On test-7: 
+  insertion-sort-matei - 0.023 s
+  insertion_sort - 0.046 s
+-----------------------------
+On test-8: 
+  insertion-sort-matei - 0.105 s
+  insertion_sort - 0.468 s
+-----------------------------
+On test-9: 
+  insertion-sort-matei - 0.009 s
+  insertion_sort - 0.009 s
 -----------------------------
 
 === FINAL BENCHMARK RESULTS ===
-  random-best-of-3 average time: 4.1440 s
-  best-of-3 average time: 16.5270 s
-  stl average time: 4.2597 s
-  random average time: 4.2237 s
-  ninther average time: 3.9457 s
+  insertion_sort average time: 0.3327 s
+  insertion-sort-matei average time: 0.0751 s
 -----------------------------
-🏆 WINNER: ninther (3.9457 s on average)
+best: insertion-sort-matei (0.0751 s on average)

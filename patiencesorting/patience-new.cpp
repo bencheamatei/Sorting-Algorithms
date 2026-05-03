@@ -6,42 +6,44 @@
 
 void custom_sort(std::vector<int> &a) {
     int n=(int)a.size();
-    std::vector<int> tops,idx;
-    std::vector<int> pos(n,-1),aux(n);
+
+    // practic aici vreau sa scap de vector<vector>. cum anume pot sa fac asta? pun elementele liniar si pur 
+    // si simplu marchez un element ca fiind top de stack si tin minte elementul previous din stack
+
+    std::vector<int> tops,unde,prev(n,-1),els;
 
     for(int i=0; i<n; i++) {
         auto it=lower_bound(tops.begin(),tops.end(),a[i]);
         if(it==tops.end()) {
             tops.push_back(a[i]);
-            idx.push_back(i);
+            unde.push_back(i);
         }
         else {
             int u=it-tops.begin();
+            prev[i]=unde[u]; // aici pointez spre topul vechi
             tops[u]=a[i];
-            idx[u]=i;
-            pos[i]=idx[u];
+            unde[u]=i;
         }
     }
 
-    std::priority_queue<std::pair<int,int>, std::vector<std::pair<int,int> >,
-                        std::greater<std::pair<int,int> > > pq;
+    std::priority_queue<std::pair<int,int>, 
+        std::vector<std::pair<int,int> >, std::greater<std::pair<int,int> > > pq;
 
-    for(int x:idx) {
-        pq.push({a[x],x});
+    for(const auto &it:unde) {
+        pq.push({a[it],it});
     }
 
-    int cnt=0,val,unde;
     while(!pq.empty()) {
-        val=pq.top().first;
-        unde=pq.top().second;
+        int val=pq.top().first;
+        int pos=pq.top().second;
         pq.pop();
-
-        aux[cnt++]=val;
-        if(pos[unde]>=0) {
-            pq.push({a[pos[unde]],pos[unde]});
+        els.push_back(val);
+        if(prev[pos]!=-1) {
+            pq.push({a[prev[pos]],prev[pos]});
         }
     }
-    a=std::move(aux);
+
+    a=std::move(els);
 }
 
 int main() {

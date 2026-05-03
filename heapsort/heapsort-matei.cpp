@@ -5,8 +5,12 @@
 
 void custom_sort(std::vector<int> &a) {
     int n=(int)a.size();
+    if(n<=1)
+        return;
+
     int st=n>>1;
     int dr=n;
+    int* data=a.data();
 
     while(dr>1) {
         if(st>0) {
@@ -14,23 +18,30 @@ void custom_sort(std::vector<int> &a) {
         }
         else {
             dr--;
-            std::swap(a[dr],a[0]);
+            // std::swap(a[dr],a[0]);
+            int tmp=data[dr];
+            data[dr]=data[0];
+            data[0]=tmp;
         }
 
         int root=st;
-        while(2*root+1<dr) {
-            int x=2*root+1;
-            if(x+1<dr && a[x]<a[x+1]) {
+        int val=data[root];
+        int left_chld=(root<<1)|1;
+        while(left_chld<dr) {
+            int x=left_chld;
+            if(x+1<dr && data[x]<data[x+1]) {
                 x++;
             }
 
-            if(a[root]<a[x]) {
-                std::swap(a[root],a[x]);
+            if(val<data[x]) {
+                data[root]=data[x];
                 root=x;
+                left_chld=(root<<1)|1;
             }   
             else 
                 break;
         }
+        data[root]=val;
     }
 }   
 

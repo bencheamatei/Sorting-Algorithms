@@ -10,7 +10,7 @@ def gen_test(file, n, tip):
     if tip==0:
         # pure random aici
         for i in range(n):
-            u=random.randint(min_val,max_val)
+            u=random.randint(1,10**6)
             fout.write(str(u)+" ")
     elif tip==1:
         # toate egale
@@ -80,7 +80,10 @@ def gen_test(file, n, tip):
     fout.write("\n")
 
 def main():
-    for i in range(6):
-        gen_test("./teste/test-"+str(i),10000000,i)
-        gen_test("./teste-mici/test-"+str(i),20000,i)
+    for i in range(18):
+        gen_test("./teste/test-"+str(i)+".in",10000000,i%6)
+        gen_test("./teste-mici/test-"+str(i)+".in",20000,i%4)
+
+    # for i in range(10):
+    #     gen_test("./rtests/test"+str(i)+".in",8000000,0)
 main()
