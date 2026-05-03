@@ -1,116 +1,116 @@
 On test-0: 
-  iter - 1.984 s
-  merge-sort-matei - 3.797 s
-  merge-sort-mix - 3.728 s
-  merge_sort - 4.559 s
+  ninther - 5.223 s
+  random - 3.879 s
+  random-best-of-3 - 2.685 s
+  stl - 3.359 s
 -----------------------------
 On test-1: 
-  iter - 2.888 s
-  merge-sort-matei - 3.092 s
-  merge-sort-mix - 2.985 s
-  merge_sort - 3.033 s
+  ninther - 3.267 s
+  random - 3.181 s
+  random-best-of-3 - 2.767 s
+  stl - 3.460 s
 -----------------------------
 On test-10: 
-  iter - 2.015 s
-  merge-sort-matei - 4.146 s
-  merge-sort-mix - 4.186 s
-  merge_sort - 4.144 s
+  ninther - 5.342 s
+  random - 6.634 s
+  random-best-of-3 - 3.833 s
+  stl - 4.103 s
 -----------------------------
 On test-11: 
-  iter - 1.835 s
-  merge-sort-matei - 4.927 s
-  merge-sort-mix - 3.889 s
-  merge_sort - 3.662 s
+  ninther - 3.225 s
+  random - 3.489 s
+  random-best-of-3 - 2.800 s
+  stl - 3.611 s
 -----------------------------
 On test-12: 
-  iter - 1.431 s
-  merge-sort-matei - 3.477 s
-  merge-sort-mix - 3.438 s
-  merge_sort - 3.411 s
+  ninther - 3.151 s
+  random - 3.289 s
+  random-best-of-3 - 4.450 s
+  stl - 3.234 s
 -----------------------------
 On test-13: 
-  iter - 2.072 s
-  merge-sort-matei - 3.070 s
-  merge-sort-mix - 3.056 s
-  merge_sort - 2.855 s
+  ninther - 2.240 s
+  random - 2.205 s
+  random-best-of-3 - 1.782 s
+  stl - 2.992 s
 -----------------------------
 On test-14: 
-  iter - 2.901 s
-  merge-sort-matei - 3.030 s
-  merge-sort-mix - 2.992 s
-  merge_sort - 3.110 s
+  ninther - 3.054 s
+  random - 3.492 s
+  random-best-of-3 - 3.044 s
+  stl - 4.568 s
 -----------------------------
 On test-15: 
-  iter - 2.110 s
-  merge-sort-matei - 2.927 s
-  merge-sort-mix - 2.939 s
-  merge_sort - 3.031 s
+  ninther - 3.588 s
+  random - 5.146 s
+  random-best-of-3 - 3.373 s
+  stl - 2.822 s
 -----------------------------
 On test-16: 
-  iter - 2.474 s
-  merge-sort-matei - 5.128 s
-  merge-sort-mix - 5.792 s
-  merge_sort - 4.613 s
+  ninther - 4.261 s
+  random - 4.784 s
+  random-best-of-3 - 4.087 s
+  stl - 4.588 s
 -----------------------------
 On test-17: 
-  iter - 2.300 s
-  merge-sort-matei - 3.995 s
-  merge-sort-mix - 5.289 s
-  merge_sort - 4.280 s
+  ninther - 4.037 s
+  random - 5.626 s
+  random-best-of-3 - 3.053 s
+  stl - 3.729 s
 -----------------------------
 On test-2: 
-  iter - 2.603 s
-  merge-sort-matei - 4.383 s
-  merge-sort-mix - 12.818 s
-  merge_sort - 5.626 s
+  ninther - 3.005 s
+  random - 3.846 s
+  random-best-of-3 - 3.238 s
+  stl - 3.818 s
 -----------------------------
 On test-3: 
-  iter - 3.356 s
-  merge-sort-matei - 3.530 s
-  merge-sort-mix - 3.369 s
-  merge_sort - 3.639 s
+  ninther - 3.138 s
+  random - 3.748 s
+  random-best-of-3 - 4.601 s
+  stl - 3.019 s
 -----------------------------
 On test-4: 
-  iter - 3.705 s
-  merge-sort-matei - 5.530 s
-  merge-sort-mix - 4.367 s
-  merge_sort - 4.830 s
+  ninther - 4.308 s
+  random - 4.186 s
+  random-best-of-3 - 3.553 s
+  stl - 4.108 s
 -----------------------------
 On test-5: 
-  iter - 2.741 s
-  merge-sort-matei - 3.748 s
-  merge-sort-mix - 3.879 s
-  merge_sort - 3.816 s
+  ninther - 3.343 s
+  random - 3.439 s
+  random-best-of-3 - 2.998 s
+  stl - 5.265 s
 -----------------------------
 On test-6: 
-  iter - 3.036 s
-  merge-sort-matei - 4.886 s
-  merge-sort-mix - 3.749 s
-  merge_sort - 3.775 s
+  ninther - 3.594 s
+  random - 3.559 s
+  random-best-of-3 - 2.682 s
+  stl - 3.182 s
 -----------------------------
 On test-7: 
-  iter - 3.754 s
-  merge-sort-matei - 3.028 s
-  merge-sort-mix - 3.129 s
-  merge_sort - 2.930 s
+  ninther - 1.890 s
+  random - 1.713 s
+  random-best-of-3 - 1.833 s
+  stl - 3.076 s
 -----------------------------
 On test-8: 
-  iter - 3.122 s
-  merge-sort-matei - 3.406 s
-  merge-sort-mix - 3.272 s
-  merge_sort - 4.419 s
+  ninther - 3.230 s
+  random - 3.751 s
+  random-best-of-3 - 5.291 s
+  stl - 6.435 s
 -----------------------------
 On test-9: 
-  iter - 2.435 s
-  merge-sort-matei - 3.077 s
-  merge-sort-mix - 3.675 s
-  merge_sort - 2.928 s
+  ninther - 3.271 s
+  random - 4.332 s
+  random-best-of-3 - 3.580 s
+  stl - 3.085 s
 -----------------------------
 
 === FINAL BENCHMARK RESULTS ===
-  merge_sort average time: 3.8145 s
-  iter average time: 2.5979 s
-  merge-sort-mix average time: 4.2529 s
-  merge-sort-matei average time: 3.8432 s
+  random-best-of-3 average time: 3.3139 s
+  stl average time: 3.8030 s
+  random average time: 3.9055 s
+  ninther average time: 3.5093 s
 -----------------------------
-best: iter (2.5979 s on average)
+best: random-best-of-3 (3.3139 s on average)

@@ -11,7 +11,7 @@ int get_nr(int st, int dr)
     return distrib(gen);
 }
 
-int median_of_three(std::vector<int>& a, int st, int dr) {
+int median_of_three(int* a, int st, int dr) {
     int p1=get_nr(st,dr),p2=get_nr(st,dr),p3=get_nr(st,dr);
     if(a[p1]>a[p3]) {
         std::swap(a[p1],a[p3]);
@@ -23,23 +23,33 @@ int median_of_three(std::vector<int>& a, int st, int dr) {
     return p3;
 }
 
-void quicksort(std::vector<int>& a, int st, int dr) {
+void quicksort(int *a, int st, int dr) {
     while(st<dr) {
         int pivot_idx=median_of_three(a,st,dr);
         int low=st;
         int gre=dr;
         int i=st+1;
-        std::swap(a[pivot_idx],a[st]);
+        // std::swap(a[pivot_idx],a[st]);
+        int tmp=a[pivot_idx];
+        a[pivot_idx]=a[st];
+        a[st]=tmp;
+
         int pivot=a[st];
 
         while(i<=gre) {
             if(a[i]<pivot) {
-                std::swap(a[low],a[i]);
+                // std::swap(a[low],a[i]);
+                int tmp=a[low];
+                a[low]=a[i];
+                a[i]=tmp;
                 low++;
                 i++;
             }
             else if(a[i]>pivot) {
-                std::swap(a[gre],a[i]);
+                // std::swap(a[gre],a[i]);
+                int tmp=a[gre];
+                a[gre]=a[i];
+                a[i]=tmp;
                 gre--;
             }   
             else {
@@ -61,7 +71,8 @@ void quicksort(std::vector<int>& a, int st, int dr) {
 void custom_sort(std::vector<int> &a) {
     std::random_device rd;
     gen.seed(rd());
-    quicksort(a,0,(int)a.size()-1);
+    int *v=a.data();
+    quicksort(v,0,(int)a.size()-1);
 }
 
 int main() {
