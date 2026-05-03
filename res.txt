@@ -1,78 +1,97 @@
 On test-0: 
-  insertion-sort-matei - 0.099 s
-  insertion_sort - 0.478 s
+  radix-new - 1.708 s
+  radix-sort-matei - 1.777 s
+  radix_sort - 2.018 s
 -----------------------------
 On test-1: 
-  insertion-sort-matei - 0.010 s
-  insertion_sort - 0.010 s
+  radix-new - 2.628 s
+  radix-sort-matei - 2.654 s
+  radix_sort - 2.975 s
 -----------------------------
 On test-10: 
-  insertion-sort-matei - 0.182 s
-  insertion_sort - 0.828 s
+  radix-new - 2.563 s
+  radix-sort-matei - 2.634 s
+  radix_sort - 3.063 s
 -----------------------------
 On test-11: 
-  insertion-sort-matei - 0.018 s
-  insertion_sort - 0.043 s
+  radix-new - 2.150 s
+  radix-sort-matei - 2.017 s
+  radix_sort - 3.856 s
 -----------------------------
 On test-12: 
-  insertion-sort-matei - 0.098 s
-  insertion_sort - 0.457 s
+  radix-new - 1.818 s
+  radix-sort-matei - 1.696 s
+  radix_sort - 2.007 s
 -----------------------------
 On test-13: 
-  insertion-sort-matei - 0.010 s
-  insertion_sort - 0.016 s
+  radix-new - 2.516 s
+  radix-sort-matei - 2.432 s
+  radix_sort - 2.808 s
 -----------------------------
 On test-14: 
-  insertion-sort-matei - 0.177 s
-  insertion_sort - 0.887 s
+  radix-new - 2.442 s
+  radix-sort-matei - 2.523 s
+  radix_sort - 2.802 s
 -----------------------------
 On test-15: 
-  insertion-sort-matei - 0.022 s
-  insertion_sort - 0.042 s
+  radix-new - 2.441 s
+  radix-sort-matei - 2.505 s
+  radix_sort - 2.907 s
 -----------------------------
 On test-16: 
-  insertion-sort-matei - 0.095 s
-  insertion_sort - 0.439 s
+  radix-new - 2.722 s
+  radix-sort-matei - 4.140 s
+  radix_sort - 3.213 s
 -----------------------------
 On test-17: 
-  insertion-sort-matei - 0.010 s
-  insertion_sort - 0.019 s
+  radix-new - 2.157 s
+  radix-sort-matei - 2.125 s
+  radix_sort - 2.289 s
 -----------------------------
 On test-2: 
-  insertion-sort-matei - 0.180 s
-  insertion_sort - 0.887 s
+  radix-new - 2.382 s
+  radix-sort-matei - 2.385 s
+  radix_sort - 2.773 s
 -----------------------------
 On test-3: 
-  insertion-sort-matei - 0.021 s
-  insertion_sort - 0.047 s
+  radix-new - 2.428 s
+  radix-sort-matei - 2.561 s
+  radix_sort - 2.752 s
 -----------------------------
 On test-4: 
-  insertion-sort-matei - 0.096 s
-  insertion_sort - 0.472 s
+  radix-new - 2.617 s
+  radix-sort-matei - 4.067 s
+  radix_sort - 3.030 s
 -----------------------------
 On test-5: 
-  insertion-sort-matei - 0.014 s
-  insertion_sort - 0.011 s
+  radix-new - 2.199 s
+  radix-sort-matei - 2.264 s
+  radix_sort - 2.428 s
 -----------------------------
 On test-6: 
-  insertion-sort-matei - 0.182 s
-  insertion_sort - 0.829 s
+  radix-new - 1.666 s
+  radix-sort-matei - 1.617 s
+  radix_sort - 1.882 s
 -----------------------------
 On test-7: 
-  insertion-sort-matei - 0.023 s
-  insertion_sort - 0.046 s
+  radix-new - 3.343 s
+  radix-sort-matei - 2.283 s
+  radix_sort - 2.336 s
 -----------------------------
 On test-8: 
-  insertion-sort-matei - 0.105 s
-  insertion_sort - 0.468 s
+  radix-new - 3.670 s
+  radix-sort-matei - 2.725 s
+  radix_sort - 4.441 s
 -----------------------------
 On test-9: 
-  insertion-sort-matei - 0.009 s
-  insertion_sort - 0.009 s
+  radix-new - 3.742 s
+  radix-sort-matei - 2.579 s
+  radix_sort - 2.780 s
 -----------------------------
 
 === FINAL BENCHMARK RESULTS ===
-  insertion_sort average time: 0.3327 s
-  insertion-sort-matei average time: 0.0751 s
+  radix-sort-matei average time: 2.4991 s
+  radix_sort average time: 2.7978 s
+  radix-new average time: 2.5107 s
 -----------------------------
-best: insertion-sort-matei (0.0751 s on average)
+best: radix-sort-matei (2.4991 s on average)

@@ -7,7 +7,7 @@
 #include <queue>
 using namespace std;
 
-void radix_sort(vector<int>& a)
+void custom_sort(vector<int>& a)
 {
     int n = a.size();
     if (n <= 1) return;
@@ -25,9 +25,7 @@ void radix_sort(vector<int>& a)
         for (int shift = 0; shift < 32; shift += 8) {
             int count[256] = {};
             for (int x : v) count[(x >> shift) & 0xFF]++;
-            // Prefix sums
             for (int i = 1; i < 256; ++i) count[i] += count[i - 1];
-            // Stable placement (iterate in reverse)
             for (int i = n - 1; i >= 0; --i) {
                 int bucket = (v[i] >> shift) & 0xFF;
                 tmp[--count[bucket]] = v[i];
@@ -47,19 +45,17 @@ void radix_sort(vector<int>& a)
 }
 
 int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-    
+    std::ios::sync_with_stdio(false);
+    std::cin.tie(nullptr);
+
     int n;
-    cin>>n;
-    vector<int> a(n);
+    std::cin >> n;
+    std::vector<int> a(n);
     for (int& x : a) {
-        cin >> x;
+        std::cin >> x;
     }
-    
-    radix_sort(a);
-    
-    assert(is_sorted(a.begin(), a.end()));    
-    
+
+    custom_sort(a);
+    assert(std::ranges::is_sorted(a));
     return 0;
 }
