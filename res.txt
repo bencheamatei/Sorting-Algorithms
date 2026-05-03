@@ -1,116 +1,57 @@
-On test-0: 
-  ninther - 5.223 s
-  random - 3.879 s
-  random-best-of-3 - 2.685 s
-  stl - 3.359 s
+On test0: 
+  intro-new - 3.380 s
+  intro-sort-matei - 2.836 s
+  intro_sort - 2.697 s
 -----------------------------
-On test-1: 
-  ninther - 3.267 s
-  random - 3.181 s
-  random-best-of-3 - 2.767 s
-  stl - 3.460 s
+On test1: 
+  intro-new - 3.156 s
+  intro-sort-matei - 3.708 s
+  intro_sort - 2.294 s
 -----------------------------
-On test-10: 
-  ninther - 5.342 s
-  random - 6.634 s
-  random-best-of-3 - 3.833 s
-  stl - 4.103 s
+On test2: 
+  intro-new - 3.356 s
+  intro-sort-matei - 4.762 s
+  intro_sort - 2.698 s
 -----------------------------
-On test-11: 
-  ninther - 3.225 s
-  random - 3.489 s
-  random-best-of-3 - 2.800 s
-  stl - 3.611 s
+On test3: 
+  intro-new - 2.867 s
+  intro-sort-matei - 3.023 s
+  intro_sort - 2.068 s
 -----------------------------
-On test-12: 
-  ninther - 3.151 s
-  random - 3.289 s
-  random-best-of-3 - 4.450 s
-  stl - 3.234 s
+On test4: 
+  intro-new - 3.441 s
+  intro-sort-matei - 2.891 s
+  intro_sort - 2.030 s
 -----------------------------
-On test-13: 
-  ninther - 2.240 s
-  random - 2.205 s
-  random-best-of-3 - 1.782 s
-  stl - 2.992 s
+On test5: 
+  intro-new - 3.118 s
+  intro-sort-matei - 2.609 s
+  intro_sort - 2.162 s
 -----------------------------
-On test-14: 
-  ninther - 3.054 s
-  random - 3.492 s
-  random-best-of-3 - 3.044 s
-  stl - 4.568 s
+On test6: 
+  intro-new - 2.871 s
+  intro-sort-matei - 4.523 s
+  intro_sort - 2.011 s
 -----------------------------
-On test-15: 
-  ninther - 3.588 s
-  random - 5.146 s
-  random-best-of-3 - 3.373 s
-  stl - 2.822 s
+On test7: 
+  intro-new - 3.081 s
+  intro-sort-matei - 2.817 s
+  intro_sort - 2.143 s
 -----------------------------
-On test-16: 
-  ninther - 4.261 s
-  random - 4.784 s
-  random-best-of-3 - 4.087 s
-  stl - 4.588 s
+On test8: 
+  intro-new - 2.672 s
+  intro-sort-matei - 2.777 s
+  intro_sort - 2.144 s
 -----------------------------
-On test-17: 
-  ninther - 4.037 s
-  random - 5.626 s
-  random-best-of-3 - 3.053 s
-  stl - 3.729 s
------------------------------
-On test-2: 
-  ninther - 3.005 s
-  random - 3.846 s
-  random-best-of-3 - 3.238 s
-  stl - 3.818 s
------------------------------
-On test-3: 
-  ninther - 3.138 s
-  random - 3.748 s
-  random-best-of-3 - 4.601 s
-  stl - 3.019 s
------------------------------
-On test-4: 
-  ninther - 4.308 s
-  random - 4.186 s
-  random-best-of-3 - 3.553 s
-  stl - 4.108 s
------------------------------
-On test-5: 
-  ninther - 3.343 s
-  random - 3.439 s
-  random-best-of-3 - 2.998 s
-  stl - 5.265 s
------------------------------
-On test-6: 
-  ninther - 3.594 s
-  random - 3.559 s
-  random-best-of-3 - 2.682 s
-  stl - 3.182 s
------------------------------
-On test-7: 
-  ninther - 1.890 s
-  random - 1.713 s
-  random-best-of-3 - 1.833 s
-  stl - 3.076 s
------------------------------
-On test-8: 
-  ninther - 3.230 s
-  random - 3.751 s
-  random-best-of-3 - 5.291 s
-  stl - 6.435 s
------------------------------
-On test-9: 
-  ninther - 3.271 s
-  random - 4.332 s
-  random-best-of-3 - 3.580 s
-  stl - 3.085 s
+On test9: 
+  intro-new - 2.552 s
+  intro-sort-matei - 2.802 s
+  intro_sort - 2.010 s
 -----------------------------
 
 === FINAL BENCHMARK RESULTS ===
-  random-best-of-3 average time: 3.3139 s
-  stl average time: 3.8030 s
-  random average time: 3.9055 s
-  ninther average time: 3.5093 s
+  intro-sort-matei average time: 3.2748 s
+  intro_sort average time: 2.2257 s
+  intro-new average time: 3.0494 s
 -----------------------------
-best: random-best-of-3 (3.3139 s on average)
+best: intro_sort (2.2257 s on average)
