@@ -1,97 +1,116 @@
 On test-0: 
-  radix-new - 1.708 s
-  radix-sort-matei - 1.777 s
-  radix_sort - 2.018 s
+  iter - 1.984 s
+  merge-sort-matei - 3.797 s
+  merge-sort-mix - 3.728 s
+  merge_sort - 4.559 s
 -----------------------------
 On test-1: 
-  radix-new - 2.628 s
-  radix-sort-matei - 2.654 s
-  radix_sort - 2.975 s
+  iter - 2.888 s
+  merge-sort-matei - 3.092 s
+  merge-sort-mix - 2.985 s
+  merge_sort - 3.033 s
 -----------------------------
 On test-10: 
-  radix-new - 2.563 s
-  radix-sort-matei - 2.634 s
-  radix_sort - 3.063 s
+  iter - 2.015 s
+  merge-sort-matei - 4.146 s
+  merge-sort-mix - 4.186 s
+  merge_sort - 4.144 s
 -----------------------------
 On test-11: 
-  radix-new - 2.150 s
-  radix-sort-matei - 2.017 s
-  radix_sort - 3.856 s
+  iter - 1.835 s
+  merge-sort-matei - 4.927 s
+  merge-sort-mix - 3.889 s
+  merge_sort - 3.662 s
 -----------------------------
 On test-12: 
-  radix-new - 1.818 s
-  radix-sort-matei - 1.696 s
-  radix_sort - 2.007 s
+  iter - 1.431 s
+  merge-sort-matei - 3.477 s
+  merge-sort-mix - 3.438 s
+  merge_sort - 3.411 s
 -----------------------------
 On test-13: 
-  radix-new - 2.516 s
-  radix-sort-matei - 2.432 s
-  radix_sort - 2.808 s
+  iter - 2.072 s
+  merge-sort-matei - 3.070 s
+  merge-sort-mix - 3.056 s
+  merge_sort - 2.855 s
 -----------------------------
 On test-14: 
-  radix-new - 2.442 s
-  radix-sort-matei - 2.523 s
-  radix_sort - 2.802 s
+  iter - 2.901 s
+  merge-sort-matei - 3.030 s
+  merge-sort-mix - 2.992 s
+  merge_sort - 3.110 s
 -----------------------------
 On test-15: 
-  radix-new - 2.441 s
-  radix-sort-matei - 2.505 s
-  radix_sort - 2.907 s
+  iter - 2.110 s
+  merge-sort-matei - 2.927 s
+  merge-sort-mix - 2.939 s
+  merge_sort - 3.031 s
 -----------------------------
 On test-16: 
-  radix-new - 2.722 s
-  radix-sort-matei - 4.140 s
-  radix_sort - 3.213 s
+  iter - 2.474 s
+  merge-sort-matei - 5.128 s
+  merge-sort-mix - 5.792 s
+  merge_sort - 4.613 s
 -----------------------------
 On test-17: 
-  radix-new - 2.157 s
-  radix-sort-matei - 2.125 s
-  radix_sort - 2.289 s
+  iter - 2.300 s
+  merge-sort-matei - 3.995 s
+  merge-sort-mix - 5.289 s
+  merge_sort - 4.280 s
 -----------------------------
 On test-2: 
-  radix-new - 2.382 s
-  radix-sort-matei - 2.385 s
-  radix_sort - 2.773 s
+  iter - 2.603 s
+  merge-sort-matei - 4.383 s
+  merge-sort-mix - 12.818 s
+  merge_sort - 5.626 s
 -----------------------------
 On test-3: 
-  radix-new - 2.428 s
-  radix-sort-matei - 2.561 s
-  radix_sort - 2.752 s
+  iter - 3.356 s
+  merge-sort-matei - 3.530 s
+  merge-sort-mix - 3.369 s
+  merge_sort - 3.639 s
 -----------------------------
 On test-4: 
-  radix-new - 2.617 s
-  radix-sort-matei - 4.067 s
-  radix_sort - 3.030 s
+  iter - 3.705 s
+  merge-sort-matei - 5.530 s
+  merge-sort-mix - 4.367 s
+  merge_sort - 4.830 s
 -----------------------------
 On test-5: 
-  radix-new - 2.199 s
-  radix-sort-matei - 2.264 s
-  radix_sort - 2.428 s
+  iter - 2.741 s
+  merge-sort-matei - 3.748 s
+  merge-sort-mix - 3.879 s
+  merge_sort - 3.816 s
 -----------------------------
 On test-6: 
-  radix-new - 1.666 s
-  radix-sort-matei - 1.617 s
-  radix_sort - 1.882 s
+  iter - 3.036 s
+  merge-sort-matei - 4.886 s
+  merge-sort-mix - 3.749 s
+  merge_sort - 3.775 s
 -----------------------------
 On test-7: 
-  radix-new - 3.343 s
-  radix-sort-matei - 2.283 s
-  radix_sort - 2.336 s
+  iter - 3.754 s
+  merge-sort-matei - 3.028 s
+  merge-sort-mix - 3.129 s
+  merge_sort - 2.930 s
 -----------------------------
 On test-8: 
-  radix-new - 3.670 s
-  radix-sort-matei - 2.725 s
-  radix_sort - 4.441 s
+  iter - 3.122 s
+  merge-sort-matei - 3.406 s
+  merge-sort-mix - 3.272 s
+  merge_sort - 4.419 s
 -----------------------------
 On test-9: 
-  radix-new - 3.742 s
-  radix-sort-matei - 2.579 s
-  radix_sort - 2.780 s
+  iter - 2.435 s
+  merge-sort-matei - 3.077 s
+  merge-sort-mix - 3.675 s
+  merge_sort - 2.928 s
 -----------------------------
 
 === FINAL BENCHMARK RESULTS ===
-  radix-sort-matei average time: 2.4991 s
-  radix_sort average time: 2.7978 s
-  radix-new average time: 2.5107 s
+  merge_sort average time: 3.8145 s
+  iter average time: 2.5979 s
+  merge-sort-mix average time: 4.2529 s
+  merge-sort-matei average time: 3.8432 s
 -----------------------------
-best: radix-sort-matei (2.4991 s on average)
+best: iter (2.5979 s on average)
