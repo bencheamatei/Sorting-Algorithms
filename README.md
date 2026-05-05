@@ -1,8 +1,6 @@
 # Sorting-Algorithms
 
 ## The mcsort team:
-
-## The mcsort Team
 * [Benchea Matei](https://github.com/bencheamatei)
 * [Mitoceanu Ciprian Minodor](https://github.com/ciprian-mx)
 
