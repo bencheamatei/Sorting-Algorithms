@@ -3,10 +3,38 @@
 #include <vector>
 #include <cassert>
 #include <queue>
+#include <random>
 #include <chrono>
+
+std::mt19937 gen;
+int get_nr(int left, int right)
+{
+    std::uniform_int_distribution<> distrib(left, right);
+    return distrib(gen);
+}
+
+int monte_carlo(const std::vector<int> &v,int sz) {
+    int ans=0;
+    for(int i=0; i<1000; i++) {
+        int st=get_nr(0,sz-1);
+        int dr=get_nr(0,sz-1);
+        if(st>dr)
+            std::swap(st,dr);
+
+        if(v[st]>v[dr])
+            ans++;
+    }
+    return ans;
+}
 
 void custom_sort(std::vector<int> &a) {
     int n=(int)a.size();
+
+    std::random_device rd;
+    gen.seed(rd());
+    if(monte_carlo(a,n)<50) {
+        std::reverse(a.begin(),a.end());
+    }
 
     std::vector<std::vector<int> > heaps;
     std::vector<int> tops;

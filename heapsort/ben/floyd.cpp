@@ -4,10 +4,10 @@
 #include <cassert>
 #include <chrono>
 
-void shift_down(std::vector<int> &a,int nod,int dr) {
+void shift_down(int* &a,int nod,int dr) {
     int val=a[nod];
-    while(2*nod+1<dr) {
-        int x=2*nod+1;
+    while(((nod<<1)|1)<dr) {
+        int x=(nod<<1)|1;
         if(x+1<dr && a[x]<a[x+1]) {
             x++;
         }
@@ -22,11 +22,11 @@ void shift_down(std::vector<int> &a,int nod,int dr) {
     a[nod]=val;
 }
 
-void shift_down2(std::vector<int> &a,int nod,int dr) {
+void shift_down2(int* &a,int nod,int dr) {
     int fr=nod;
     int val=a[nod];
-    while(2*fr+1<dr) {
-        int x=2*fr+1;
+    while(((fr<<1)|1)<dr) {
+        int x=(fr<<1)|1;
         if(x+1<dr && a[x]<a[x+1]) {
             x++;
         }
@@ -39,7 +39,9 @@ void shift_down2(std::vector<int> &a,int nod,int dr) {
     while(curr>nod) {
         int par=(curr-1)>>1;
         if(a[curr]>a[par]) {
-            std::swap(a[curr],a[par]);
+            int tmp=a[curr];
+            a[curr]=a[par];
+            a[par]=tmp;
             curr=par;
         }
         else 
@@ -49,13 +51,16 @@ void shift_down2(std::vector<int> &a,int nod,int dr) {
 
 void custom_sort(std::vector<int> &a) {
     int n=(int)a.size();
+    int *v=a.data();
     for(int i=(n>>1)-1; i>=0; i--) {
-        shift_down(a,i,n);
+        shift_down(v,i,n);
     }
 
     for(int dr=n-1; dr; dr--) {
-        std::swap(a[dr],a[0]);
-        shift_down2(a,0,dr);
+        int tmp=v[dr];
+        v[dr]=v[0];
+        v[0]=tmp;
+        shift_down2(v,0,dr);
     }
 }   
 
