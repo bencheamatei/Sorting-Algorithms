@@ -1,57 +1,70 @@
-On test0: 
-  intro-new - 3.380 s
-  intro-sort-matei - 2.836 s
-  intro_sort - 2.697 s
+
+[36m=== Running Benchmarks ===[0m
+[33mOn test-0:[0m
+  better - 5.880380 s
+  patience-new - 7.835900 s
+  patience-sort-matei - 5.897700 s
+  patience_sort - 5.691260 s
 -----------------------------
-On test1: 
-  intro-new - 3.156 s
-  intro-sort-matei - 3.708 s
-  intro_sort - 2.294 s
+[33mOn test-1:[0m
+  better - 5.868530 s
+  patience-new - 7.859260 s
+  patience-sort-matei - 5.870340 s
+  patience_sort - 5.726340 s
 -----------------------------
-On test2: 
-  intro-new - 3.356 s
-  intro-sort-matei - 4.762 s
-  intro_sort - 2.698 s
+[33mOn test-2:[0m
+  better - 5.873090 s
+  patience-new - 7.904740 s
+  patience-sort-matei - 5.842040 s
+  patience_sort - 5.742140 s
 -----------------------------
-On test3: 
-  intro-new - 2.867 s
-  intro-sort-matei - 3.023 s
-  intro_sort - 2.068 s
+[33mOn test-3:[0m
+  better - 5.897720 s
+  patience-new - 7.819650 s
+  patience-sort-matei - 5.992890 s
+  patience_sort - 5.728510 s
 -----------------------------
-On test4: 
-  intro-new - 3.441 s
-  intro-sort-matei - 2.891 s
-  intro_sort - 2.030 s
+[33mOn test-4:[0m
+  better - 5.831140 s
+  patience-new - 7.872730 s
+  patience-sort-matei - 6.006280 s
+  patience_sort - 6.385950 s
 -----------------------------
-On test5: 
-  intro-new - 3.118 s
-  intro-sort-matei - 2.609 s
-  intro_sort - 2.162 s
+[33mOn test-5:[0m
+  better - 5.939250 s
+  patience-new - 7.807470 s
+  patience-sort-matei - 5.861990 s
+  patience_sort - 5.769830 s
 -----------------------------
-On test6: 
-  intro-new - 2.871 s
-  intro-sort-matei - 4.523 s
-  intro_sort - 2.011 s
+[33mOn test-6:[0m
+  better - 5.856360 s
+  patience-new - 7.894150 s
+  patience-sort-matei - 6.041420 s
+  patience_sort - 5.941400 s
 -----------------------------
-On test7: 
-  intro-new - 3.081 s
-  intro-sort-matei - 2.817 s
-  intro_sort - 2.143 s
+[33mOn test-7:[0m
+  better - 6.368400 s
+  patience-new - 8.412320 s
+  patience-sort-matei - 6.252590 s
+  patience_sort - 5.995440 s
 -----------------------------
-On test8: 
-  intro-new - 2.672 s
-  intro-sort-matei - 2.777 s
-  intro_sort - 2.144 s
+[33mOn test-8:[0m
+  better - 5.890400 s
+  patience-new - 7.995900 s
+  patience-sort-matei - 5.941560 s
+  patience_sort - 5.738230 s
 -----------------------------
-On test9: 
-  intro-new - 2.552 s
-  intro-sort-matei - 2.802 s
-  intro_sort - 2.010 s
+[33mOn test-9:[0m
+  better - 5.841970 s
+  patience-new - 7.867130 s
+  patience-sort-matei - 5.835920 s
+  patience_sort - 5.811440 s
 -----------------------------
 
-=== FINAL BENCHMARK RESULTS ===
-  intro-sort-matei average time: 3.2748 s
-  intro_sort average time: 2.2257 s
-  intro-new average time: 3.0494 s
+[32m=== FINAL BENCHMARK RESULTS ===[0m
+  patience_sort average time: 5.853054 s
+  patience-sort-matei average time: 5.954273 s
+  patience-new average time: 7.926925 s
+  better average time: 5.924724 s
 -----------------------------
-best: intro_sort (2.2257 s on average)
+BEST: patience_sort (5.853054 s on average)

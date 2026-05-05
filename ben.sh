@@ -9,7 +9,7 @@ mkdir -p "$bins"
 for sort_file in "$algs"/*.cpp; do 
     [ -e "$sort_file" ] || continue
     sort_name=$(basename "$sort_file" .cpp)
-    g++ -std=c++20 -o3 "$sort_file" -o "$bins/$sort_name"
+    g++ -std=c++20 "$sort_file" -o "$bins/$sort_name"
 done 
 
 TIMEFORMAT="%4R"

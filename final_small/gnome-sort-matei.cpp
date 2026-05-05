@@ -4,25 +4,23 @@
 #include <cassert>
 
 void custom_sort(std::vector<int> &a) {
-    bool sortat=0;
     int n=(int)a.size();
+    int pos=1;
+    int nxt=2;
     int* v=a.data();
-
-    for(int unde=0; !sortat && unde<n;) {
-        sortat=true;
-        int u=-1;
-        for(int i=n-2; i>=unde; --i) {
-            if(v[i]>v[i+1]) {
-                sortat=false;
-                int tmp=v[i];
-                v[i]=v[i+1];
-                v[i+1]=tmp;
-                u=i;
-            }
+    while(pos<n) {
+        if(pos==0 || v[pos]>=v[pos-1]) {
+            pos=nxt;
+            nxt++;
         }
-        unde=u;
+        else {
+            int tmp=v[pos];
+            v[pos]=v[pos-1];
+            v[pos-1]=tmp;
+            pos--;
+        } 
     }
-}  
+}   
 
 int main() {
     std::ios::sync_with_stdio(false);
