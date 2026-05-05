@@ -10,8 +10,7 @@ void custom_sort(std::vector<int> &a) {
     int* v=a.data();
     while(pos<n) {
         if(pos==0 || v[pos]>=v[pos-1]) {
-            pos=nxt;
-            nxt++;
+            pos++;
         }
         else {
             int tmp=v[pos];
