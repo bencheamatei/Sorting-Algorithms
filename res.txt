@@ -1,70 +1,118 @@
 
 [36m=== Running Benchmarks ===[0m
 [33mOn test-0:[0m
-  better - 5.880380 s
-  patience-new - 7.835900 s
-  patience-sort-matei - 5.897700 s
-  patience_sort - 5.691260 s
+  N-3-4 - 5.847640 s
+  control - 7.608990 s
+  monte-carlo - 5.766070 s
+  reverse-3-4 - 5.729940 s
 -----------------------------
 [33mOn test-1:[0m
-  better - 5.868530 s
-  patience-new - 7.859260 s
-  patience-sort-matei - 5.870340 s
-  patience_sort - 5.726340 s
+  N-3-4 - 0.834815 s
+  control - 0.899051 s
+  monte-carlo - 0.897700 s
+  reverse-3-4 - 0.860950 s
+-----------------------------
+[33mOn test-10:[0m
+  N-3-4 - 5.794610 s
+  control - 5.573730 s
+  monte-carlo - 5.607110 s
+  reverse-3-4 - 5.802670 s
+-----------------------------
+[33mOn test-11:[0m
+  N-3-4 - 7.153830 s
+  control - 5.860970 s
+  monte-carlo - 5.740390 s
+  reverse-3-4 - 5.864280 s
+-----------------------------
+[33mOn test-12:[0m
+  N-3-4 - 7.237180 s
+  control - 5.777910 s
+  monte-carlo - 5.804440 s
+  reverse-3-4 - 5.865370 s
+-----------------------------
+[33mOn test-13:[0m
+  N-3-4 - 0.861065 s
+  control - 2.332580 s
+  monte-carlo - 0.938967 s
+  reverse-3-4 - 0.861749 s
+-----------------------------
+[33mOn test-14:[0m
+  N-3-4 - 3.222870 s
+  control - 3.346640 s
+  monte-carlo - 3.556950 s
+  reverse-3-4 - 10.289300 s
+-----------------------------
+[33mOn test-15:[0m
+  N-3-4 - 6.730610 s
+  control - 8.534480 s
+  monte-carlo - 3.505330 s
+  reverse-3-4 - 8.047580 s
+-----------------------------
+[33mOn test-16:[0m
+  N-3-4 - 6.035100 s
+  control - 6.226760 s
+  monte-carlo - 7.143250 s
+  reverse-3-4 - 5.774570 s
+-----------------------------
+[33mOn test-17:[0m
+  N-3-4 - 5.829150 s
+  control - 5.865970 s
+  monte-carlo - 7.277690 s
+  reverse-3-4 - 6.424740 s
 -----------------------------
 [33mOn test-2:[0m
-  better - 5.873090 s
-  patience-new - 7.904740 s
-  patience-sort-matei - 5.842040 s
-  patience_sort - 5.742140 s
+  N-3-4 - 3.550970 s
+  control - 3.264920 s
+  monte-carlo - 3.630110 s
+  reverse-3-4 - 9.422390 s
 -----------------------------
 [33mOn test-3:[0m
-  better - 5.897720 s
-  patience-new - 7.819650 s
-  patience-sort-matei - 5.992890 s
-  patience_sort - 5.728510 s
+  N-3-4 - 6.299970 s
+  control - 8.442070 s
+  monte-carlo - 4.773070 s
+  reverse-3-4 - 7.965780 s
 -----------------------------
 [33mOn test-4:[0m
-  better - 5.831140 s
-  patience-new - 7.872730 s
-  patience-sort-matei - 6.006280 s
-  patience_sort - 6.385950 s
+  N-3-4 - 5.754410 s
+  control - 6.215830 s
+  monte-carlo - 7.064890 s
+  reverse-3-4 - 5.713970 s
 -----------------------------
 [33mOn test-5:[0m
-  better - 5.939250 s
-  patience-new - 7.807470 s
-  patience-sort-matei - 5.861990 s
-  patience_sort - 5.769830 s
+  N-3-4 - 6.174200 s
+  control - 5.902790 s
+  monte-carlo - 7.263520 s
+  reverse-3-4 - 5.887260 s
 -----------------------------
 [33mOn test-6:[0m
-  better - 5.856360 s
-  patience-new - 7.894150 s
-  patience-sort-matei - 6.041420 s
-  patience_sort - 5.941400 s
+  N-3-4 - 5.805030 s
+  control - 5.887140 s
+  monte-carlo - 7.286840 s
+  reverse-3-4 - 5.912430 s
 -----------------------------
 [33mOn test-7:[0m
-  better - 6.368400 s
-  patience-new - 8.412320 s
-  patience-sort-matei - 6.252590 s
-  patience_sort - 5.995440 s
+  N-3-4 - 0.861775 s
+  control - 0.878529 s
+  monte-carlo - 0.904916 s
+  reverse-3-4 - 0.919767 s
 -----------------------------
 [33mOn test-8:[0m
-  better - 5.890400 s
-  patience-new - 7.995900 s
-  patience-sort-matei - 5.941560 s
-  patience_sort - 5.738230 s
+  N-3-4 - 3.226990 s
+  control - 4.727590 s
+  monte-carlo - 3.296660 s
+  reverse-3-4 - 7.913620 s
 -----------------------------
 [33mOn test-9:[0m
-  better - 5.841970 s
-  patience-new - 7.867130 s
-  patience-sort-matei - 5.835920 s
-  patience_sort - 5.811440 s
+  N-3-4 - 6.217220 s
+  control - 9.404720 s
+  monte-carlo - 3.371850 s
+  reverse-3-4 - 7.843510 s
 -----------------------------
 
 [32m=== FINAL BENCHMARK RESULTS ===[0m
-  patience_sort average time: 5.853054 s
-  patience-sort-matei average time: 5.954273 s
-  patience-new average time: 7.926925 s
-  better average time: 5.924724 s
+  reverse-3-4 average time: 5.949993 s
+  monte-carlo average time: 4.657208 s
+  N-3-4 average time: 4.857635 s
+  control average time: 5.375037 s
 -----------------------------
-BEST: patience_sort (5.853054 s on average)
+BEST: monte-carlo (4.657208 s on average)

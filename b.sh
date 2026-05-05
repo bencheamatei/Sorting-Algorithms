@@ -17,7 +17,6 @@ for sort_file in "$algs"/*.cpp; do
     [ -e "$sort_file" ] || continue
     sort_name=$(basename "$sort_file" .cpp)
     
-    # CRITICAL: No -O3 flag used here. Compiling purely unoptimized.
     g++ -std=c++20 "$sort_file" -o "$bins/$sort_name"
     
     if [ $? -eq 0 ]; then
