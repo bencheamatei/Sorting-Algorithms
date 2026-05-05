@@ -106,5 +106,5 @@ def gen_test(file, n, tip):
 
 def main():
     for i in range(10):
-        gen_test("./rtests/test-"+str(i)+".in", 10000000, 0)
+        gen_test("./teste/test-"+str(i)+".in", 10000000, 0)
 main()

@@ -15,7 +15,6 @@ int get_nr(int st, int dr)
 int median_of_three(int* a, int st, int dr) {
     int p1=get_nr(st,dr),p2=get_nr(st,dr),p3=get_nr(st,dr);
     if(a[p1]>a[p3]) {
-        // std::swap(a[p1],a[p3]);
         int tmp=a[p1];
         a[p1]=a[p3];
         a[p3]=tmp;
@@ -51,7 +50,6 @@ void heap_sort(int *a,int left,int right) {
         }
         else {
             dr--;
-            // std::swap(a[dr],a[left]);
             int tmp=a[dr];
             a[dr]=a[left];
             a[left]=tmp;
@@ -65,7 +63,6 @@ void heap_sort(int *a,int left,int right) {
             }
 
             if(a[root]<a[x]) {
-                // std::swap(a[root],a[x]);
                 int tmp=a[root];
                 a[root]=a[x];
                 a[x]=tmp;
@@ -95,7 +92,6 @@ void intro_sort(int *a, int st,int dr, int depth) {
         int low=st;
         int gre=dr;
         int i=st+1;
-        // std::swap(a[pivot_idx],a[st]);
         int tmp=a[pivot_idx];
         a[pivot_idx]=a[st];
         a[st]=tmp;
@@ -104,7 +100,6 @@ void intro_sort(int *a, int st,int dr, int depth) {
 
         while(i<=gre) {
             if(a[i]<pivot) {
-                // std::swap(a[low],a[i]);
                 int tmp=a[low];
                 a[low]=a[i];
                 a[i]=tmp;
@@ -112,7 +107,6 @@ void intro_sort(int *a, int st,int dr, int depth) {
                 i++;
             }
             else if(a[i]>pivot) {
-                // std::swap(a[gre],a[i]);
                 int tmp=a[gre];
                 a[gre]=a[i];
                 a[i]=tmp;
@@ -159,11 +153,7 @@ int main() {
         std::cin >> x;
     }
 
-    auto start=std::chrono::high_resolution_clock::now();
     custom_sort(a);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> diff = end - start;
-    std::cout << diff.count() << "\n";
     assert(std::ranges::is_sorted(a));
     return 0;
 }

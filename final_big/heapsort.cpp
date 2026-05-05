@@ -19,7 +19,6 @@ void custom_sort(std::vector<int> &a) {
         }
         else {
             dr--;
-            // std::swap(a[dr],a[0]);
             int tmp=data[dr];
             data[dr]=data[0];
             data[0]=tmp;
@@ -57,11 +56,7 @@ int main() {
         std::cin >> x;
     }
 
-    auto start=std::chrono::high_resolution_clock::now();
     custom_sort(a);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> diff = end - start;
-    std::cout << diff.count() << "\n";
     assert(std::ranges::is_sorted(a));
     return 0;
 }

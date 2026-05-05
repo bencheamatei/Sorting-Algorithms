@@ -60,11 +60,7 @@ int main() {
         std::cin >> x;
     }
 
-    auto start=std::chrono::high_resolution_clock::now();
     custom_sort(a);
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> diff = end - start;
-    std::cout << diff.count() << "\n";
     assert(std::ranges::is_sorted(a));
     return 0;
 }
