@@ -1,8 +1,6 @@
 # Sorting-Algorithms
 
 ## The mcsort team:
-
-## The mcsort Team
 * [Benchea Matei](https://github.com/bencheamatei)
 * [Mitoceanu Ciprian Minodor](https://github.com/ciprian-mx)
 
@@ -11,7 +9,6 @@
 This project is a comprehensive C++ benchmarking suite designed to evaluate the performance of various sorting algorithms on diverse datasets. Developed as a team project for the Data Structures course, the primary goal is to implement nine distinct sorting algorithms and rigorously test them to highlight their respective strengths, weaknesses, and edge cases.
 
 ## Project Structure
-
 * `algs/` — Contains various draft implementations, experimental approaches, and testing iterations for the sorting algorithms.
 * `final_big/` & `final_small/` — Contain the final, optimized source code used for our definitive benchmarks.
 * `test-generations/` — Includes all the generators and scripts utilized to create our diverse benchmarking datasets.

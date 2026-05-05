@@ -6,7 +6,6 @@
 void custom_sort(std::vector<int> &a) {
     int n=(int)a.size();
     int pos=1;
-    int nxt=2;
     int* v=a.data();
     while(pos<n) {
         if(pos==0 || v[pos]>=v[pos-1]) {
