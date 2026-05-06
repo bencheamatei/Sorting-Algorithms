@@ -1,6 +1,7 @@
 import random
 import sys
 import os
+import shutil
 
 def get_min(st,dr,itter):
     ans=random.randint(st,dr)
@@ -103,8 +104,23 @@ def gen_test(file, n, tip):
         for x in b:
             fout.write(str(x)+" ")
     fout.write("\n")
+    fout.close()
 
 def main():
-    for i in range(10):
-        gen_test("./teste/test-"+str(i)+".in", 10000000, 0)
+    if len(sys.argv)<4:
+        print("Not enough arguments, should have <folder> <no. of tests> <big/small>")
+        exit(0)
+    print(sys.argv)
+    unde=sys.argv[1]
+    if os.path.exists(unde):
+        shutil.rmtree(unde)
+    os.makedirs(unde)
+    print("Generating tests...")
+    if sys.argv[3]=="big":
+        for i in range(int(sys.argv[2])):
+            gen_test(unde+"/test-"+str(i)+".in", 10000000, i%7)
+    else:
+        for i in range(int(sys.argv[2])):
+            gen_test(unde+"/test-"+str(i)+".in", 20000, i%7)
+    print("Done!")
 main()
