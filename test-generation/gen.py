@@ -106,21 +106,32 @@ def gen_test(file, n, tip):
     fout.write("\n")
     fout.close()
 
+names=["pure-random", "all-equal", "decreasing-ish", "increasing-ish", "anti-merge", "radix-random", "anti-quick"]
+
 def main():
     if len(sys.argv)<4:
         print("Not enough arguments, should have <folder> <no. of tests> <big/small>")
         exit(0)
-    print(sys.argv)
+    # print(sys.argv)
     unde=sys.argv[1]
     if os.path.exists(unde):
         shutil.rmtree(unde)
     os.makedirs(unde)
     print("Generating tests...")
-    if sys.argv[3]=="big":
-        for i in range(int(sys.argv[2])):
-            gen_test(unde+"/test-"+str(i)+".in", 10000000, i%7)
+    if len(sys.argv)==4:
+        if sys.argv[3]=="big":
+            for i in range(int(sys.argv[2])):
+                gen_test(unde+"/"+names[i%7]+"-"+str(i)+".in", 10000000, i%7)
+        else:
+            for i in range(int(sys.argv[2])):
+                gen_test(unde+"/"+names[i%7]+"-"+str(i)+".in", 20000, i%7)
     else:
-        for i in range(int(sys.argv[2])):
-            gen_test(unde+"/test-"+str(i)+".in", 20000, i%7)
+        care=list(map(int,sys.argv[4:]))
+        if sys.argv[3]=="big":
+            for i in range(int(sys.argv[2])):
+                gen_test(unde+"/"+names[care[i%len(care)]]+"-"+str(i)+".in", 10000000, care[i%len(care)])
+        else:
+            for i in range(int(sys.argv[2])):
+                gen_test(unde+"/"+names[care[i%len(care)]]+"-"+str(i)+".in", 20000, care[i%len(care)])
     print("Done!")
 main()
