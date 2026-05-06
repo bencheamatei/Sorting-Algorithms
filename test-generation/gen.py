@@ -17,9 +17,10 @@ def gen_test(file, n, tip):
     fout.write(str(n)+"\n")
     if tip==0:
         # pure random aici
-        for i in range(n):
-            u=random.randint(min_val,max_val)
-            fout.write(str(u)+" ")
+        a=random.sample(range(min_val,max_val),n)
+        random.shuffle(a)
+        for x in a:
+            fout.write(str(x)+" ")
     elif tip==1:
         # toate egale
         u=random.randint(min_val,max_val)
@@ -27,12 +28,7 @@ def gen_test(file, n, tip):
             fout.write(str(u)+" ")
     elif tip==2:
         # un array sortat descrescator in care am dat swap la cateva elemente random 
-        a=[]
-        for i in range(n):
-            u=random.randint(min_val,max_val)
-            a.append(u)
-        a.sort(reverse=True)
-
+        a=sorted(random.sample(range(min_val,max_val),n), reverse=True)
         for i in range(500):
             i=random.randint(0,n-1)
             j=random.randint(0,n-1)
@@ -42,11 +38,7 @@ def gen_test(file, n, tip):
             fout.write(str(x)+" ")
     elif tip==3:
         # un array sortat crescator in care sunt swapuite cateve elemente
-        a=[]
-        for i in range(n):
-            u=random.randint(min_val,max_val)
-            a.append(u)
-        a.sort()
+        a=sorted(random.sample(range(min_val,max_val),n))
 
         for i in range(500):
             i=random.randint(0,n-1)
@@ -56,10 +48,7 @@ def gen_test(file, n, tip):
         for x in a:
             fout.write(str(x)+" ")
     elif tip==4:
-        a=[]
-        for i in range(n):
-            u=random.randint(min_val,max_val)
-            a.append(u)
+        a=sorted(random.sample(range(min_val,max_val),n))
         
         def anti_merge(a):
             if len(a)<2:
