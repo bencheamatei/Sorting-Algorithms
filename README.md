@@ -42,7 +42,7 @@ This project is a comprehensive C++ benchmarking suite designed to evaluate the 
 * Sizes are fixed to two tiers: `small` ($20,000$) for $O(n^2)$ algorithms and `big` ($10,000,000$) for $O(n \log n)$ and non-comparison algorithms.
 * Each family is designed to emphasize a specific property: presorted order, heavy duplicates, adversarial recursion patterns, or value distributions that favor radix counting passes.
 
-## Testcase families (brief)
+## Testcase families
 
 * `pure-random` - values are sampled uniformly from the full 32-bit signed range.
 * `all-equal` - every element is the same random value.
