@@ -15,42 +15,16 @@ This project is a comprehensive C++ benchmarking suite designed to evaluate the 
 * `b.sh` — The primary shell script used to automate the benchmarking process.
 * `project.pdf` — The official project requirements and specifications provided for the course.
 
-## The algorithms
+## Theoretical complexities
 
-### Insertion Sort
-
-A standard implementation of insertion sort with backwards insertion.
-Complexity: $O(N^2)$
-
-### Gnome Sort
-
-
-Complexity: $O(N^2)$
-
-### Bubblesort
-
-Complexity: $O(N^2)$
-
-### Heapsort 
-
-Complexity: $O(NlogN)$
-
-### Quicksort
-
-Complexity: $O(NlogN)$
-
-### Mergesort
-
-Complexity: $O(NlogN)$
-
-### Introsort
-
-Complexity: $O(NlogN)$
-
-### Patience Sorting
-
-Complexity: $O(NlogN)$
-
-### Radix Sort
-
-Complexity: $O(d(n+b))$
+| Algorithm | Best-Case Time | Worst-Case Time |
+| :--- | :--- | :--- |
+| **Bubble Sort** | $O(n)$ | $O(n^2)$ |
+| **Gnome Sort** | $O(n)$ | $O(n^2)$ |
+| **Insertion Sort** | $O(n)$ | $O(n^2)$ |
+| **Heapsort** | $O(n \log n)$ | $O(n \log n)$ |
+| **Introsort** | $O(n \log n)$ | $O(n \log n)$ | 
+| **Mergesort** | $O(n \log n)$ | $O(n \log n)$ | 
+| **Patience Sorting** | $O(n \log n)$ | $O(n \log n)$ |
+| **Quicksort** | $O(n \log n)$ | $O(n^2)$ |
+| **Radix Sort** | $O(n \cdot k)$ | $O(n \cdot k)$ | 
