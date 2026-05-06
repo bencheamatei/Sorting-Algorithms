@@ -4,15 +4,13 @@
 #include <cassert>
 #include <chrono>
 
-std::vector<int> tmp;
-
-void merge_sort(std::vector<int> &a,int st,int dr) {
+void merge_sort(int* &a,int* &tmp,int st,int dr) {
     if(st>=dr) 
         return ;
 
     int mij=(st+dr)>>1;
-    merge_sort(a,st,mij);
-    merge_sort(a,mij+1,dr);
+    merge_sort(a,tmp,st,mij);
+    merge_sort(a,tmp,mij+1,dr);
 
     int i=st;
     int j=mij+1;
@@ -40,8 +38,10 @@ void merge_sort(std::vector<int> &a,int st,int dr) {
 }
 
 void custom_sort(std::vector<int> &a) {
-    tmp.resize((int)a.size());
-    merge_sort(a,0,(int)a.size()-1);
+    std::vector<int> tmp((int)a.size());
+    int* ap=a.data();
+    int* tmpp=tmp.data();
+    merge_sort(ap,tmpp,0,(int)a.size()-1);
 }
 
 int main() {

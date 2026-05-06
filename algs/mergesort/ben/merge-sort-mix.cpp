@@ -4,7 +4,7 @@
 #include <cassert>
 #include <chrono>
 
-void merge_sort(std::vector<int> &a,std::vector<int> &tmp,int st,int dr) {
+void merge_sort(int* &a,int* &tmp,int st,int dr) {
     if(st>=dr) 
         return ;
 
@@ -39,7 +39,9 @@ void merge_sort(std::vector<int> &a,std::vector<int> &tmp,int st,int dr) {
 
 void custom_sort(std::vector<int> &a) {
     std::vector<int> tmp((int)a.size()-1);
-    merge_sort(a,tmp,0,(int)a.size()-1);
+    int* ap=a.data();
+    int* tmpp=tmp.data();
+    merge_sort(ap,tmpp,0,(int)a.size()-1);
 }
 
 int main() {

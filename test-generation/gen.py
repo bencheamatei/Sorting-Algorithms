@@ -2,6 +2,7 @@ import random
 import sys
 import os
 import shutil
+import numpy as np
 
 def get_min(st,dr,itter):
     ans=random.randint(st,dr)
@@ -63,11 +64,28 @@ def gen_test(file, n, tip):
         def anti_merge(a):
             if len(a)<2:
                 return a
-            st=anti_merge(a[::2])
-            dr=anti_merge(a[1::2])
+            en=len(a)
+
+            pp=(en-1)//2+1
+            st=[]
+            dr=[]
+            if pp>2:
+                s=set(np.random.choice(range(en-2),pp))
+                for i in range(en-2):
+                    if i in s:
+                        st.append(a[i])
+                    else:
+                        dr.append(a[i])
+            if random.randint(0,1)==0:
+                st.append(a[-1])
+                dr.append(a[-2]) 
+            else:
+                st.append(a[-2])
+                dr.append(a[-1]) 
+            st=anti_merge(st)
+            dr=anti_merge(dr)
             st.extend(dr)
             return st
-        
         a=anti_merge(a)
         for x in a:
             fout.write(str(x)+" ")

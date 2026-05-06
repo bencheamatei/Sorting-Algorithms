@@ -7,7 +7,7 @@
 
 using namespace std;
 
-void merge(vector<int>& a, vector<int>& tmp, int lo, int mid, int hi){
+void merge(int* &a, int* &tmp, int lo, int mid, int hi){
     for (int i = lo; i<=hi;i++) tmp[i] = a[i];
     int i = lo, j = mid + 1, k = lo;
     while(i <= mid && j<=hi)
@@ -19,7 +19,7 @@ void merge(vector<int>& a, vector<int>& tmp, int lo, int mid, int hi){
     while (j <= hi)  a[k++] = tmp[j++];
 }
 
-void merge_sort(vector<int>& a, vector<int>& tmp, int lo, int hi)
+void merge_sort(int* &a, int* &tmp, int lo, int hi)
 {
     if(lo>=hi) return;
     int mid = lo + (hi - lo)/2;
@@ -33,7 +33,9 @@ void custom_sort(vector<int>& a)
     int n = a.size();
     if (n <= 1) return;
     vector<int> tmp(n);
-    merge_sort(a, tmp, 0, n - 1);
+    int* ap=a.data();
+    int* tmpp=tmp.data();
+    merge_sort(ap, tmpp, 0, n - 1);
     
 }
 
