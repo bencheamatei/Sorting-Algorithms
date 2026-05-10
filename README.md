@@ -34,9 +34,6 @@ This project is a comprehensive C++ benchmarking suite designed to evaluate the 
 
 * ```Patience Sorting``` - basic implementation along with a monte carlo heuristic 
 
-<<<<<<< HEAD
-* ```Radix sort``` - a LSD, base 256 implementation of the radix sort
-=======
 * ```Radix sort``` - a LSD, base 256 implementation of the radix sort
 
 ## How the tests are developed
@@ -54,4 +51,3 @@ This project is a comprehensive C++ benchmarking suite designed to evaluate the 
 * `anti-merge` - recursively interleaves left/right halves to make merges less cache-friendly and harder to exploit.
 * `radix-random` - values are drawn from a few tight ranges (small positives, small negatives, and extreme halves), clustering digits.
 * `anti-quick` - builds many duplicates by repeating a small set of distinct values, arranged to stress partitioning.
->>>>>>> 6033c7b8c4cc84287a77d2a1ccf1e8371bc3c211
