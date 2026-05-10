@@ -35,19 +35,3 @@ This project is a comprehensive C++ benchmarking suite designed to evaluate the 
 * ```Patience Sorting``` - basic implementation along with a monte carlo heuristic 
 
 * ```Radix sort``` - a LSD, base 256 implementation of the radix sort
-
-## How the tests are developed
-
-* The main generator is `test-generation/gen.py`, which creates seven families: `pure-random`, `all-equal`, `decreasing-ish`, `increasing-ish`, `anti-merge`, `radix-random`, and `anti-quick`.
-* Sizes are fixed to two tiers: `small` ($20,000$) for $O(n^2)$ algorithms and `big` ($10,000,000$) for $O(n \log n)$ and non-comparison algorithms.
-* Each family is designed to emphasize a specific property: presorted order, heavy duplicates, adversarial recursion patterns, or value distributions that favor radix counting passes.
-
-## Testcase families (brief)
-
-* `pure-random` - values are sampled uniformly from the full 32-bit signed range.
-* `all-equal` - every element is the same random value.
-* `decreasing-ish` - random values sorted descending, then a small number of random swaps are applied.
-* `increasing-ish` - random values sorted ascending, then a small number of random swaps are applied.
-* `anti-merge` - recursively interleaves left/right halves to make merges less cache-friendly and harder to exploit.
-* `radix-random` - values are drawn from a few tight ranges (small positives, small negatives, and extreme halves), clustering digits.
-* `anti-quick` - builds many duplicates by repeating a small set of distinct values, arranged to stress partitioning.
