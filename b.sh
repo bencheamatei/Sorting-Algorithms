@@ -16,7 +16,7 @@ for sort_file in "$algs"/*.cpp; do
     [ -e "$sort_file" ] || continue
     sort_name=$(basename "$sort_file" .cpp)
     
-    g++ -std=c++20 "$sort_file" -o "$bins/$sort_name"
+    g++ -std=c++20 -O3 "$sort_file" -o "$bins/$sort_name"
     
     if [ $? -eq 0 ]; then
         echo -e " \e[90m[+] Compiled $sort_name\e[0m"

@@ -25,6 +25,14 @@ def gen_test(file, n, tip):
         a=sr.anti_merge(n)
     elif tip==5:
         a=sr.almost_eq(n)
+    elif tip==6:
+        a=sr.sawtooth(n)
+    elif tip==7:
+        a=sr.few_distinct(n)
+    elif tip==8:
+        a=sr.alternating(n)
+    else:
+        a=sr.true_random(n)
     fout=open(file,"w")
     fout.write(str(n)+"\n")
     for x in a:
@@ -32,7 +40,8 @@ def gen_test(file, n, tip):
     fout.write("\n")
     fout.close()
 
-names=["pure-random", "all-equal", "decreasing-ish", "increasing-ish", "anti-merge", "almost-equal"]
+names=["pure-random", "all-equal", "decreasing-ish", "increasing-ish", "anti-merge", 
+       "almost-equal", "sawtooth", "few-distinct", "alternating"]
 
 def main():
     if len(sys.argv)<4:
@@ -45,12 +54,13 @@ def main():
     os.makedirs(unde)
     print("Generating tests...")
     if len(sys.argv)==4:
+        cnt_fam=len(names)
         if sys.argv[3]=="big":
             for i in range(int(sys.argv[2])):
-                gen_test(unde+"/"+names[i%6]+"-"+str(i)+".in", 10000000, i%6)
+                gen_test(unde+"/"+names[i%cnt_fam]+"-"+str(i)+".in", 10000000, i%cnt_fam)
         else:
             for i in range(int(sys.argv[2])):
-                gen_test(unde+"/"+names[i%6]+"-"+str(i)+".in", 20000, i%6)
+                gen_test(unde+"/"+names[i%cnt_fam]+"-"+str(i)+".in", 20000, i%cnt_fam)
     else:
         care=list(map(int,sys.argv[4:]))
         if sys.argv[3]=="big":
