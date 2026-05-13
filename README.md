@@ -92,7 +92,7 @@ Fill in the averages you compute for your benchmarks (units are up to you, ms re
 | Bubblesort | small | 0.935888 s |  0.525643 s|
 | Gnomesort | small | 0.999981 s  |  0.579373 s |
 | Insertion sort | small | 0.039498 s | 0.022863 s |
-| Patience Sorting | small | 1.375485 s | 0.636356 s |
+| Patience Sorting | big | 1.375485 s | 0.636356 s |
 | Quicksort | big | 0.952951 s | 0.499832 s |
 | Mergesort | big | 0.764982 s | 0.419123 s |
 | Heapsort | big | 1.824383 s | 0.872940 s |
