@@ -36,18 +36,65 @@ This project is a comprehensive C++ benchmarking suite designed to evaluate the 
 
 * ```Radix sort``` - a LSD, base 256 implementation of the radix sort
 
-## How the tests are developed
+## How the tests are made
 
-* The main generator is `test-generation/gen.py`, which creates seven families: `pure-random`, `all-equal`, `decreasing-ish`, `increasing-ish`, `anti-merge`, `radix-random`, and `anti-quick`.
-* Sizes are fixed to two tiers: `small` ($20,000$) for $O(n^2)$ algorithms and `big` ($10,000,000$) for $O(n \log n)$ and non-comparison algorithms.
-* Each family is designed to emphasize a specific property: presorted order, heavy duplicates, adversarial recursion patterns, or value distributions that favor radix counting passes.
+The main generator is `test-generation/gen.py`, which uses `test-generation/spec_random.py` to build nine deterministic families and writes input files in the standard format:
 
-## Testcase families
+* **Format**: first line is `N`, second line has `N` integers separated by spaces.
+* **Naming**: `<family>-<index>.in` (for example `pure-random-0.in`).
+* **Sizes**:
+	* `small` = 20,000 elements (for $O(n^2)$ algorithms).
+	* `big` = 10,000,000 elements (for $O(n \log n)$ and non-comparison algorithms).
+
+### Generator usage
+
+```
+python test-generation/gen.py <folder> <no_of_tests> <big|small> [family_indexes...]
+```
+
+* If `family_indexes` is omitted, families are used round-robin in the order below.
+* If `family_indexes` is provided, only those families are used (still round-robin).
+
+Family order and indexes:
+
+```
+0: pure-random
+1: all-equal
+2: decreasing-ish
+3: increasing-ish
+4: anti-merge
+5: almost-equal
+6: sawtooth
+7: few-distinct
+8: alternating
+```
+
+Note: `gen.py` imports `numpy`, so make sure it is installed in your Python environment.
+
+## Testcase families (spec_random.py)
 
 * `pure-random` - values are sampled uniformly from the full 32-bit signed range.
 * `all-equal` - every element is the same random value.
-* `decreasing-ish` - random values sorted descending, then a small number of random swaps are applied.
-* `increasing-ish` - random values sorted ascending, then a small number of random swaps are applied.
-* `anti-merge` - recursively interleaves left/right halves to make merges less cache-friendly and harder to exploit.
-* `radix-random` - values are drawn from a few tight ranges (small positives, small negatives, and extreme halves), clustering digits.
-* `anti-quick` - builds many duplicates by repeating a small set of distinct values, arranged to stress partitioning.
+* `decreasing-ish` - random values sorted descending, then up to `min(500, sqrt(n))` swaps.
+* `increasing-ish` - random values sorted ascending, then up to `min(500, sqrt(n))` swaps.
+* `anti-merge` - recursively interleaves even/odd positions of a sorted array to fight merge locality.
+* `almost-equal` - values are clustered around a single base value with offsets in `[-1000, 1000]`.
+* `sawtooth` - concatenation of sorted blocks of size `sqrt(n)`.
+* `few-distinct` - array values are drawn from 10 random distinct values.
+* `alternating` - alternating negative and non-negative values.
+
+## Average timing table
+
+Fill in the averages you compute for your benchmarks (units are up to you, ms recommended):
+
+| Algorithm | Dataset size | Avg time | Avg time #2 |
+| --- | --- | --- | --- |
+| Bubblesort | small | 0.935888 s |  0.525643 s|
+| Gnomesort | small | 0.999981 s  |  0.579373 s |
+| Insertion sort | small | 0.039498 s | 0.022863 s |
+| Patience Sorting | small | 1.375485 s | 0.636356 s |
+| Quicksort | big | 0.952951 s | 0.499832 s |
+| Mergesort | big | 0.764982 s | 0.419123 s |
+| Heapsort | big | 1.824383 s | 0.872940 s |
+| Introsort | big |  0.768892 s | 0.414114 s |
+| Radix sort | big | 0.128475 s | 0.095082 s |
