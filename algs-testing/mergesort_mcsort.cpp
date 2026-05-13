@@ -4,14 +4,12 @@
 #include <cassert>
 #include <chrono>
 
-void merge(int *a,int *b, int st,int mij,int dr,int sz) {
+void merge(int *a,int *b, int st,int mij,int dr) {
     int i=st;
     int j=mij;
     int curr=st;
 
     while(i<mij && j<dr) {
-        assert(i<sz && j<sz);
-        assert(curr<sz);
         if(a[i]<a[j]) {
             b[curr++]=a[i++];
         }
@@ -21,11 +19,9 @@ void merge(int *a,int *b, int st,int mij,int dr,int sz) {
     }
 
     while(i<mij) {
-        assert(curr<sz && i<sz);
         b[curr++]=a[i++];
     }
     while(j<dr) {
-        assert(curr<sz && i<sz);
         b[curr++]=a[j++];
     }
 }
@@ -41,7 +37,7 @@ void custom_sort(std::vector<int> &a) {
         for(int st=0; st<n; st+=(sz<<1)) {
             int mij=std::min(st+sz,n);
             int dr=std::min(st+(sz<<1),n);
-            merge(src,dest,st,mij,dr,n);
+            merge(src,dest,st,mij,dr);
         }
         std::swap(src,dest);
     }
