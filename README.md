@@ -85,7 +85,7 @@ Note: `gen.py` imports `numpy`, so make sure it is installed in your Python envi
 
 ## Average timing table
 
-Fill in the averages you compute for your benchmarks:
+Benchmarks obtained after running each sort on 500 tests on different devices (and averaging):
 
 | Algorithm | Dataset size | Avg time | Avg time #2 |
 | --- | --- | --- | --- |
